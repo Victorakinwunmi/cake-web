@@ -45,7 +45,7 @@
       </div>
 
     </div>
-    <div class="hidden lg:flex">
+    <div class="hidden lg:flex items-center">
         <div>
           <slot name="search" />
         </div>

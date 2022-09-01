@@ -38,6 +38,12 @@
       <template #search>
         <HeadersSearch/>
       </template>
+      <template #shop>
+        <HeadersShop/>
+      </template>
+      <template #button>
+        <HeadersButton/>
+      </template>
     </HeadersContainer>
   </div>
 </template>
