@@ -49,7 +49,7 @@
         <slot name="menu" />
       </div>
 
-      <div class="block mt-8 mx-8 lg:mx-0 lg:mt-0 lg:flex items-center lg:ml-28">
+      <div class="block mt-8 mx-6 lg:mx-0 lg:mt-0 lg:flex items-center lg:ml-28">
         <div>
           <slot name="search" />
         </div>
