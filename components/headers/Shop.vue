@@ -4,7 +4,7 @@
       <svg
         xmlns="http://www.w3.org/2000/svg"
         xmlns:xlink="http://www.w3.org/1999/xlink"
-        class="w-7 h-6 fill-current mx-8"
+        class="w-7 h-6 fill-current mt-2 ml-3 lg:ml-0 lg:mr-4 hover:text-pink-600 lg:mt-0"
         viewBox="0 0 50 50"
         version="1.1"
       >

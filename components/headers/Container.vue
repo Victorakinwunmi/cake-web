@@ -36,16 +36,20 @@
         </div>
       </div>
     </div>
+
     <div
-      :class="is_revealed ? 'block top-14 right-0 w-full h-screen mt-11 absolute bg-pink-300 ' : 'hidden lg:flex'"
-      class="flex"
+      :class="
+        is_revealed
+          ? 'block top-14 right-0 w-full h-screen mt-11 absolute bg-pink-300 '
+          : 'hidden lg:flex '
+      "
+      class=""
     >
-      <div>
+      <div class="">
         <slot name="menu" />
       </div>
 
-    </div>
-    <div class="hidden lg:flex items-center">
+      <div class="block mt-8 mx-8 lg:mx-0 lg:mt-0 lg:flex items-center lg:ml-28">
         <div>
           <slot name="search" />
         </div>
@@ -58,6 +62,7 @@
           <slot name="button" />
         </div>
       </div>
+    </div>
   </div>
 </template>
 
