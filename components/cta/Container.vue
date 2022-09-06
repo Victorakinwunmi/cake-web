@@ -1,5 +1,5 @@
 <template>
-   <div class="block lg:flex p-10 lg:p-20">
+   <div class="block lg:flex p-10 lg:p-20 items-center">
      <div class="w-full">
         <div><slot name="headingbtn"/></div>
         <div><slot name="title"/></div>
