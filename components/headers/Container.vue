@@ -3,10 +3,8 @@
     class="
       flex
       justify-between
-      bg-pink-300
       w-full
       p-4
-      shadow-xl
       fixed
       items-center
     "
@@ -40,7 +38,7 @@
     <div
       :class="
         is_revealed
-          ? 'block top-14 right-0 w-full h-screen mt-11 absolute bg-pink-300 '
+          ? 'block top-14 right-0 w-full h-screen absolute mt-11 bg-gradient-to-t from-pink-200 to-white '
           : 'hidden lg:flex '
       "
       class=""
@@ -49,7 +47,9 @@
         <slot name="menu" />
       </div>
 
-      <div class="block mt-8 mx-6 lg:mx-0 lg:mt-0 lg:flex items-center lg:ml-28">
+      <div
+        class="block mt-8 mx-6 lg:mx-0 lg:mt-0 lg:flex items-center lg:ml-28"
+      >
         <div>
           <slot name="search" />
         </div>

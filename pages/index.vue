@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="bg-gradient-to-t from-pink-200 to-white">
     <div>
       <HeadersContainer>
         <template #logo>
@@ -48,15 +48,40 @@
         <template #button>
           <HeadersButton />
         </template>
-        <div>
-          <div class="mt-28">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo,
-            molestiae. Soluta, magni iste corrupti blanditiis iusto eum labore
-            vel doloremque delectus quo nesciunt fugit et inventore temporibus
-            eligendi earum nostrum.
-          </div>
-        </div>
       </HeadersContainer>
+    </div>
+
+    <div class="pt-24 ">
+        <CtaContainer>
+          <template #headingbtn>
+            <div class="hidden w-52 lg:block border bg-pink-200 p-5 rounded-md">
+              <h1 class="text-pink-400 font-bold">More than delicious</h1>
+            </div>
+          </template>
+
+          <template #title>
+            <div class="text-6xl lg:text-7xl mt-10 w-full lg:w-10/12">
+              <h1 class="text-black font-bold">We provide the best <span class="text-pink-500 font-bold">cakes</span> for you</h1>
+            </div>
+          </template>
+
+          <template #description>
+            <div class="text-xl mt-10 w-full lg:w-10/12">
+              <p>Our job is filling your tummy with delicious cakes, chops and chinchin with fast and free delivery</p>
+            </div>
+          </template>
+
+          <template #orderbtn>
+            <button class=" w-32 lg:block border bg-pink-500 mt-16 p-5 rounded-md">
+              <h1 class="text-pink-100 font-bold">Order now</h1>
+            </button>
+          </template>
+
+          <template #picture>
+            <CtaImage/>
+          </template>
+
+        </CtaContainer>
     </div>
   </div>
 </template>
