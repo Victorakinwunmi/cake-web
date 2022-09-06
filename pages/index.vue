@@ -83,6 +83,25 @@
 
         </CtaContainer>
     </div>
+
+    <div class="py-16 px-10 lg:px-0 bg-gradient-to-t from-white to-pink-100">
+        <div class="text-black text-center">
+          <h1 class="text-4xl lg:text-6xl font-bold">How To Order</h1>
+          <p class="mt-6 full text-base lg:text-xl">Our job is filling your tummy with delicious cakes, chops and chinchin with fast and free delivery</p>
+        </div>
+
+        <div class="grid grid-cols-3 w-full mt-10">
+          <div class="">
+            
+          </div>
+          <div>
+            
+          </div>
+          <div>
+            
+          </div>
+        </div>
+    </div>
   </div>
 </template>
 
