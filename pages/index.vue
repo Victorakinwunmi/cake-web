@@ -78,9 +78,28 @@
         </template>
 
         <template #orderbtn>
-          <button class=" w-full md:w-52 flex justify-center md:justify-between border items-center bg-pink-500 mt-16 p-5 rounded-md">
+          <button
+            class="
+              w-full
+              md:w-52
+              flex
+              justify-center
+              md:justify-between
+              border
+              items-center
+              bg-pink-500
+              mt-16
+              p-5
+              rounded-md
+            "
+          >
             <h1 class="text-pink-100 mx-4 text-center font-bold">Order now</h1>
-            <div><img :src="require('@/assets/icons/chevron.png')" class="w-10 h-8"></div>
+            <div>
+              <img
+                :src="require('@/assets/icons/chevron.png')"
+                class="w-10 h-8"
+              />
+            </div>
           </button>
         </template>
 
@@ -94,52 +113,108 @@
       <div class="text-black text-center">
         <h1 class="text-4xl lg:text-6xl font-bold">How To Order</h1>
         <p class="mt-6 full text-base lg:text-xl">
-          Our job is filling your tummy with delicious cakes, chops, mocktail and cocktail
-          with fast and free delivery
+          Our job is filling your tummy with delicious cakes, chops, mocktail
+          and cocktail with fast and free delivery
         </p>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1 mt-10">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1 mt-10 lg:mt-16">
         <div class="mx-auto w-7/12 block md:flex items-center">
           <div>
             <div>
-              <img :src="require('@/assets/icons/checkorder.png')" class="w-20 mx-auto h-20">
+              <img
+                :src="require('@/assets/icons/checkorder.png')"
+                class="w-20 mx-auto h-20"
+              />
             </div>
             <h1 class="text-center font-bold text-xl mt-4">Choose menu</h1>
-            <p class="text-center text-base">Select the cake, chops, mocktail or cocktail you want, please do</p>
+            <p class="text-center text-base">
+              Select the cake, chops, mocktail or cocktail you want, please do
+            </p>
           </div>
           <div>
-            <img :src="require('@/assets/icons/arrow1.png')" class="hidden lg:block w-12 h-10">
+            <img
+              :src="require('@/assets/icons/arrow1.png')"
+              class="hidden lg:block w-12 h-10"
+            />
           </div>
         </div>
 
         <div class="mx-auto w-7/12 block md:flex items-center my-10 lg:m-0">
           <div>
             <div>
-             <div>
-              <img :src="require('@/assets/icons/menu.png')" class="w-20 mx-auto h-20">
-            </div>
+              <div>
+                <img
+                  :src="require('@/assets/icons/menu.png')"
+                  class="w-20 mx-auto h-20"
+                />
+              </div>
             </div>
             <h1 class="text-center font-bold text-xl mt-4">checkout order</h1>
-            <p class="text-center text-base">Select the cake, chops, mocktail or cocktail you want, please do</p>
+            <p class="text-center text-base">
+              Select the cake, chops, mocktail or cocktail you want, please do
+            </p>
           </div>
           <div>
-            <img :src="require('@/assets/icons/arrow2.png')" class="hidden lg:block w-12 h-10">
+            <img
+              :src="require('@/assets/icons/arrow2.png')"
+              class="hidden lg:block w-12 h-10"
+            />
           </div>
         </div>
 
-        <div class=" mx-auto lg:-mx-16 xl:-mx-28 w-7/12">
+        <div class="mx-auto lg:-mx-16 xl:-mx-28 w-7/12">
           <div>
             <div>
               <div>
-              <img :src="require('@/assets/icons/delivery.png')" class="w-20 mx-auto h-20">
+                <img
+                  :src="require('@/assets/icons/delivery.png')"
+                  class="w-20 mx-auto h-20"
+                />
+              </div>
             </div>
-            </div>
-           <h1 class="text-center font-bold text-xl mt-4">Wait for delivery</h1>
-            <p class="text-center text-base">Select the cake, chops, mocktail or cocktail you want, please do</p>
+            <h1 class="text-center font-bold text-xl mt-4">
+              Wait for delivery
+            </h1>
+            <p class="text-center text-base">
+              Select the cake, chops, mocktail or cocktail you want, please do
+            </p>
           </div>
-          
         </div>
+      </div>
+    </div>
+
+    <div class="bg-gradient-to-t from-pink-200 to-white block lg:flex justify-center pt-16">
+      <div>
+        <div
+          class="
+            block
+            w-10/12
+            lg:w-full
+            bg-pink-100
+            rounded-full
+            border-2
+            mx-auto
+            lg:mx-auto
+            lg:mt-10
+          "
+        >
+          <img
+            :src="require('@/assets/images/ceo_pic.png')"
+            class="w-full"
+          />
+        </div>
+      </div>
+      
+      <div class="w-full lg:w-4/12 lg:ml-16 px-10 py-16">
+        <h1 class="font-bold text-5xl mb-6 lg:mt-28">About Us</h1>
+        <p class="text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni inventore nostrum nulla commodi adipisci repellat, 
+          facilis iste dolore eum nobis fuga quis numquam tempore, 
+          voluptatem, culpa porro saepe quae fugit.
+          orem ipsum dolor sit amet consectetur adipisicing elit. Magni inventore nostrum nulla commodi adipisci repellat, 
+          facilis iste dolore eum nobis fuga quis numquam tempore, 
+          voluptatem, culpa porro saepe quae fugit.
+        </p>
       </div>
     </div>
   </div>
