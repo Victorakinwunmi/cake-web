@@ -127,7 +127,7 @@
           </div>
         </div>
 
-        <div class=" mx-auto lg:-mx-28 w-7/12">
+        <div class=" mx-auto lg:-mx-16 xl:-mx-28 w-7/12">
           <div>
             <div>
               <div>
