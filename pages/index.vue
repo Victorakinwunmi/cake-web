@@ -78,8 +78,9 @@
         </template>
 
         <template #orderbtn>
-          <button class="w-32 lg:block border bg-pink-500 mt-16 p-5 rounded-md">
-            <h1 class="text-pink-100 font-bold">Order now</h1>
+          <button class=" w-full md:w-52 flex justify-center md:justify-between border items-center bg-pink-500 mt-16 p-5 rounded-md">
+            <h1 class="text-pink-100 mx-4 text-center font-bold">Order now</h1>
+            <div><img :src="require('@/assets/icons/chevron.png')" class="w-10 h-8"></div>
           </button>
         </template>
 
