@@ -1,15 +1,5 @@
 <template>
-  <div
-    class="
-      flex
-      justify-between
-      w-full
-      p-4
-      fixed
-      items-center
-      z-100
-    "
-  >
+  <div class="flex justify-between w-full p-4 fixed items-center z-100" :class="sticky_nav ? 'bg-pink-100' : ''">
     <div>
       <slot name="logo" />
     </div>
@@ -69,9 +59,16 @@
 
 <script>
 export default {
+  props: {
+    scrollPoint: {
+      default: 115,
+      type: Number,
+    },
+  },
   data() {
     return {
       is_revealed: false,
+      sticky_nav: false,
     };
   },
   methods: {
@@ -81,6 +78,22 @@ export default {
     hideMenu() {
       this.is_revealed = false;
     },
+
+    handleStickyNavigation() {
+      if (window.pageYOffset > this.scrollPoint) {
+        this.sticky_nav = true;
+      } else {
+        this.sticky_nav = false;
+      }
+    },
+  },
+
+  beforeMount() {
+    window.addEventListener("scroll", this.handleStickyNavigation);
+  },
+
+  beforeDestroy() {
+    window.removeEventListener("scroll", this.handleStickyNavigation);
   },
 };
 </script>
