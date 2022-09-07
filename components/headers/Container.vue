@@ -7,6 +7,7 @@
       p-4
       fixed
       items-center
+      z-100
     "
   >
     <div>
