@@ -1,6 +1,6 @@
 <template>
-<div class="bg-gradient-to-t from-pink-200 to-white h-screen">
-  <div>
+  <div class="bg-gradient-to-t from-pink-200 to-white h-screen">
+    <div>
       <HeadersContainer>
         <template #logo>
           <HeadersLogo />
@@ -49,26 +49,53 @@
           <HeadersButton />
         </template>
       </HeadersContainer>
+    </div>
+    <div class="pt-24">
+      <CtaContainer>
+        <template #title>
+          <div class="text-5xl md:text-6xl lg:text-7xl mt-10 w-full lg:w-10/12">
+            <h1 class="text-black font-bold leading-tight">
+              Designer Cakes Delivered
+              <span class="text-pink-500 font-bold">To your door steps</span>
+            </h1>
+          </div>
+        </template>
+        <template #description>
+          <div class="text-base md:text-xl mt-10 w-full lg:w-10/12">
+            <p>
+              Cake lover is an award winning. Cakes and Bakes company in
+              Nigeria. Founded in 2022
+            </p>
+          </div>
+        </template>
+        <template #orderbtn>
+          <button
+            class="
+              border
+              border-black
+              w-full
+              md:w-52
+              flex
+              justify-center
+              border
+              items-center
+              mt-16
+              p-5
+              rounded-md
+            "
+          >
+            <h1>Learn More</h1>
+            <img :src="require('@/assets/icons/Right.png')" class="w-6 h-4 ml-2">
+          </button>
+        </template>
+      </CtaContainer>
+    </div>
   </div>
-  <div class="pt-24">
-    <CtaContainer>
-      <template #title>
-        <div class="text-5xl md:text-6xl lg:text-7xl mt-10 w-full lg:w-10/12">
-          <h1 class="text-black font-bold leading-tight">Designer Cakes Delivered <span class="text-pink-500 font-bold">To your door steps</span></h1>
-        </div>
-      </template>
-    </CtaContainer>
-  </div>
-</div>
-  
 </template>
 
 <script>
-export default {
-
-}
+export default {};
 </script>
 
 <style>
-
 </style>
