@@ -60,7 +60,7 @@
         </template>
 
         <template #title>
-          <div class="text-4xl md:text-6xl lg:text-7xl mt-10 w-full lg:w-10/12">
+          <div class="text-5xl md:text-6xl lg:text-7xl mt-10 w-full lg:w-10/12">
             <h1 class="text-black font-bold">
               We provide the best
               <span class="text-pink-500 font-bold">cakes</span> for you

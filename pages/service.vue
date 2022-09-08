@@ -1,4 +1,5 @@
 <template>
+<div>
   <div>
       <HeadersContainer>
         <template #logo>
@@ -48,7 +49,9 @@
           <HeadersButton />
         </template>
       </HeadersContainer>
-    </div>
+  </div>
+</div>
+  
 </template>
 
 <script>
