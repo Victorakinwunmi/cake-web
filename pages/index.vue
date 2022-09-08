@@ -60,7 +60,7 @@
         </template>
 
         <template #title>
-          <div class="text-6xl lg:text-7xl mt-10 w-full lg:w-10/12">
+          <div class="text-4xl md:text-6xl lg:text-7xl mt-10 w-full lg:w-10/12">
             <h1 class="text-black font-bold">
               We provide the best
               <span class="text-pink-500 font-bold">cakes</span> for you
@@ -69,7 +69,7 @@
         </template>
 
         <template #description>
-          <div class="text-xl mt-10 w-full lg:w-10/12">
+          <div class="text-base md:text-xl mt-10 w-full lg:w-10/12">
             <p>
               Our job is filling your tummy with delicious cakes, chops,
               cocktail and mocktail with fast and free delivery
@@ -117,8 +117,8 @@
       <div class="text-black text-center">
         <h1 class="text-4xl lg:text-6xl font-bold">How To Order</h1>
         <p class="mt-6 full text-base lg:text-xl">
-          Our job is filling your tummy with delicious cakes, chops, mocktail
-          and cocktail with fast and free delivery
+         Our job is filling your tummy with delicious cakes, chops, mocktail
+         and cocktail with fast and free delivery
         </p>
       </div>
 
@@ -141,7 +141,7 @@
               />
             </div>
             <h1 class="text-center font-bold text-xl mt-4">Choose menu</h1>
-            <p class="text-center text-base">
+            <p class="text-center text-sm md:text-base">
               Select the cake, chops, mocktail or cocktail you want, please do
             </p>
           </div>
@@ -164,7 +164,7 @@
               </div>
             </div>
             <h1 class="text-center font-bold text-xl mt-4">checkout order</h1>
-            <p class="text-center text-base">
+            <p class="text-center  text-sm md:text-base">
               Select the cake, chops, mocktail or cocktail you want, please do
             </p>
           </div>
@@ -189,7 +189,7 @@
             <h1 class="text-center font-bold text-xl mt-4">
               Wait for delivery
             </h1>
-            <p class="text-center text-base">
+            <p class="text-center text-sm md:text-base">
               Select the cake, chops, mocktail or cocktail you want, please do
             </p>
           </div>
@@ -253,7 +253,7 @@
       </AccordionAppAccordion>
       <AccordionAppAccordion>
          <template #question>
-           <div>Are you a full service bakery or do you only make cakes?</div>
+           <div>Are you a full service bakery?</div>
          </template>
          <template #content>
            <div>We are a full-service bakery. We do not make breads, but we make most other bakery products. please check our service at the top-bar</div>
@@ -264,7 +264,7 @@
            <div>Please how do i place order on this website?</div>
          </template>
          <template #content>
-           <div>How you can place is explained above , you can simply choose menu at the top-bar and place an order</div>
+           <div>How you can place order is explained above , you can simply choose menu at the top-bar and place an order</div>
          </template>
       </AccordionAppAccordion>
     </div>

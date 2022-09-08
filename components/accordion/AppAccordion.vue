@@ -2,7 +2,7 @@
   <div class="mb-4">
     <button 
       @click="toggleAccordion()" 
-      class="px-10 text-xl font-semibold md:px-52 flex items-center space-x-3" 
+      class="px-8 text-base lg:text-xl font-semibold md:px-52 flex items-center space-x-3 " 
       :aria-expanded="isOpen"
       :aria-controls="`collapse${_uid}`"
     >
@@ -30,7 +30,7 @@
       </svg>
     </button>
     
-    <div class=" px-10 mt-2 text-base md:px-52" v-show="isOpen" :id="`collapse${_uid}`">
+    <div class=" px-8 mt-2 text-sm md:text-base md:px-52" v-show="isOpen" :id="`collapse${_uid}`">
       <slot name="content" />
     </div>
   </div>
