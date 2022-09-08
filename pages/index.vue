@@ -241,7 +241,7 @@
 
     <div class=" bg-pink-100 mt-10 lg:mt-0 py-16">
       <div class="">
-        <h1 class="px-10 font-bold mb-6 text-2xl lg:text-4xl md:px-52">Frequently Asked Questions??</h1>
+        <h1 class="px-8 font-bold mb-6 text-2xl lg:text-4xl md:px-52">Frequently Asked Questions??</h1>
       </div>
       <AccordionAppAccordion>
          <template #question>
