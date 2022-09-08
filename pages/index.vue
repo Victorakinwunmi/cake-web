@@ -261,7 +261,7 @@
       </AccordionAppAccordion>
       <AccordionAppAccordion>
          <template #question>
-           <div>Please how do i place order on this website?</div>
+           <div>Please how do i place order?</div>
          </template>
          <template #content>
            <div>How you can place order is explained above , you can simply choose menu at the top-bar and place an order</div>
