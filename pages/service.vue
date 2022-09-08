@@ -1,5 +1,5 @@
 <template>
-<div>
+<div class="bg-gradient-to-t from-pink-200 to-white h-screen">
   <div>
       <HeadersContainer>
         <template #logo>
@@ -49,6 +49,15 @@
           <HeadersButton />
         </template>
       </HeadersContainer>
+  </div>
+  <div class="pt-24">
+    <CtaContainer>
+      <template #title>
+        <div class="text-5xl md:text-6xl lg:text-7xl mt-10 w-full lg:w-10/12">
+          <h1 class="text-black font-bold leading-tight">Designer Cakes Delivered <span class="text-pink-500 font-bold">To your door steps</span></h1>
+        </div>
+      </template>
+    </CtaContainer>
   </div>
 </div>
   
