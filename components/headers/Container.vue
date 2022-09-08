@@ -50,7 +50,7 @@
         </div>
 
         <div>
-          <slot name="button" />
+            <slot name="button" />
         </div>
       </div>
     </div>

@@ -78,29 +78,33 @@
         </template>
 
         <template #orderbtn>
-          <button
-            class="
-              w-full
-              md:w-52
-              flex
-              justify-center
-              md:justify-between
-              border
-              items-center
-              bg-pink-500
-              mt-16
-              p-5
-              rounded-md
-            "
-          >
-            <h1 class="text-pink-100 mx-4 text-center font-bold">Order now</h1>
-            <div>
-              <img
-                :src="require('@/assets/icons/chevron.png')"
-                class="w-10 h-8"
-              />
-            </div>
-          </button>
+          <a href="https://www.purchase.com">
+            <button
+              class="
+                w-full
+                md:w-52
+                flex
+                justify-center
+                md:justify-between
+                border
+                items-center
+                bg-pink-500
+                mt-16
+                p-5
+                rounded-md
+              "
+            >
+              <h1 class="text-pink-100 mx-4 text-center font-bold">
+                Order now
+              </h1>
+              <div>
+                <img
+                  :src="require('@/assets/icons/chevron.png')"
+                  class="w-10 h-8"
+                />
+              </div>
+            </button>
+          </a>
         </template>
 
         <template #picture>
@@ -118,7 +122,16 @@
         </p>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1 mt-10 lg:mt-16">
+      <div
+        class="
+          grid grid-cols-1
+          md:grid-cols-2
+          lg:grid-cols-3
+          gap-1
+          mt-10
+          lg:mt-16
+        "
+      >
         <div class="mx-auto w-7/12 block md:flex items-center">
           <div>
             <div>
@@ -184,7 +197,17 @@
       </div>
     </div>
 
-    <div class="bg-gradient-to-t from-pink-200 to-white block lg:flex justify-center pt-16">
+    <div
+      class="
+        bg-gradient-to-t
+        from-pink-200
+        to-white
+        block
+        lg:flex
+        justify-center
+        pt-16
+      "
+    >
       <div>
         <div
           class="
@@ -195,27 +218,55 @@
             rounded-full
             border-2
             mx-auto
-            lg:mx-auto
-            lg:mt-10
+            lg:mx-auto lg:mt-10
           "
         >
-          <img
-            :src="require('@/assets/images/ceo_pic.png')"
-            class="w-full"
-          />
+          <img :src="require('@/assets/images/ceo_pic.png')" class="w-full" />
         </div>
       </div>
-      
+
       <div class="w-full lg:w-4/12 lg:ml-16 px-10 py-16">
         <h1 class="font-bold text-5xl mb-6 lg:mt-28">About Us</h1>
-        <p class="text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni inventore nostrum nulla commodi adipisci repellat, 
-          facilis iste dolore eum nobis fuga quis numquam tempore, 
-          voluptatem, culpa porro saepe quae fugit.
-          orem ipsum dolor sit amet consectetur adipisicing elit. Magni inventore nostrum nulla commodi adipisci repellat, 
-          facilis iste dolore eum nobis fuga quis numquam tempore, 
-          voluptatem, culpa porro saepe quae fugit.
+        <p class="text-base">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
+          inventore nostrum nulla commodi adipisci repellat, facilis iste dolore
+          eum nobis fuga quis numquam tempore, voluptatem, culpa porro saepe
+          quae fugit. orem ipsum dolor sit amet consectetur adipisicing elit.
+          Magni inventore nostrum nulla commodi adipisci repellat, facilis iste
+          dolore eum nobis fuga quis numquam tempore, voluptatem, culpa porro
+          saepe quae fugit.
         </p>
       </div>
+    </div>
+
+    <div class=" bg-pink-100 mt-10 lg:mt-0 py-16">
+      <div class="">
+        <h1 class="px-10 font-bold mb-6 text-2xl lg:text-4xl md:px-52">Frequently Asked Questions??</h1>
+      </div>
+      <AccordionAppAccordion>
+         <template #question>
+           <div class="">What makes your product differrent?</div>
+         </template>
+         <template #content>
+           <div class="">Well, you might have read once or twice that we are a scratch bakery and that alone make us unique from other bakeries.</div>
+         </template>
+      </AccordionAppAccordion>
+      <AccordionAppAccordion>
+         <template #question>
+           <div>Are you a full service bakery or do you only make cakes?</div>
+         </template>
+         <template #content>
+           <div>We are a full-service bakery. We do not make breads, but we make most other bakery products. please check our service at the top-bar</div>
+         </template>
+      </AccordionAppAccordion>
+      <AccordionAppAccordion>
+         <template #question>
+           <div>Please how do i place order on this website?</div>
+         </template>
+         <template #content>
+           <div>How you can place is explained above , you can simply choose menu at the top-bar and place an order</div>
+         </template>
+      </AccordionAppAccordion>
     </div>
   </div>
 </template>
