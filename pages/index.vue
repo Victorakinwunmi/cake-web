@@ -78,7 +78,7 @@
         </template>
 
         <template #orderbtn>
-          <a href="https://www.purchase.com">
+          <a href="#order">
             <button
               class="
                 w-full
@@ -91,6 +91,7 @@
                 bg-pink-500
                 mt-16
                 p-5
+                hover:bg-pink-600
                 rounded-md
               "
             >
@@ -113,7 +114,7 @@
       </CtaContainer>
     </div>
 
-    <div class="py-16 lg:px-0 bg-gradient-to-t from-white to-pink-100">
+    <div class="py-16 lg:px-0 bg-gradient-to-t from-white to-pink-100" id="order">
       <div class="text-black text-center">
         <h1 class="text-4xl lg:text-6xl font-bold">How To Order</h1>
         <p class="mt-6 full text-base lg:text-xl">

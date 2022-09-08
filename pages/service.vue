@@ -82,6 +82,9 @@
               mt-16
               p-5
               rounded-md
+              hover:bg-white
+              hover:text-black
+              hover:border-white
             "
           >
             <h1>Learn More</h1>
