@@ -133,8 +133,16 @@
         </div>
 
         <div>
-          <div>
-             
+          <div class="mt-6 px-10">
+            <h1 class="font-bold text-3xl lg:text-5xl">Cupcakes</h1>
+          </div>
+          <div class="px-16 grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+            <ServicesList
+              v-for="item in cupcakes"
+              :key="item.id"
+              :title="item.title"
+              :pic="item.pic"
+            />
           </div>
         </div>
     </div>
@@ -142,7 +150,29 @@
 </template>
 
 <script>
-export default {};
+export default {
+   data() {
+    return {
+       cupcakes:[
+          {
+            id:1,
+            title:"Strawberry",
+            pic: require('@/assets/images/strawberry.png')
+          },
+          {
+            id:2,
+            title:"Caramel Apple pie",
+            pic: require('@/assets/images/caramel.png')
+          },
+          {
+            id:3,
+            title:"Red velvet",
+            pic: require('@/assets/images/velvet.png')
+          },
+       ],
+    };
+   }
+};
 </script>
 
 <style>
