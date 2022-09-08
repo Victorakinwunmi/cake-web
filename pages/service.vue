@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-gradient-to-t from-pink-200 to-white h-screen">
+  <div class="bg-gradient-to-t from-pink-200 to-white">
     <div>
       <HeadersContainer>
         <template #logo>
@@ -53,7 +53,7 @@
     <div class="pt-24">
       <CtaContainer>
         <template #title>
-          <div class="text-5xl md:text-6xl lg:text-7xl mt-10 w-full lg:w-10/12">
+          <div class="text-5xl md:text-6xl lg:text-7xl mt-10 lg:mt-0 w-full lg:w-10/12">
             <h1 class="text-black font-bold leading-tight">
               Designer Cakes Delivered
               <span class="text-pink-500 font-bold">To your door steps</span>
@@ -71,8 +71,7 @@
         <template #orderbtn>
           <button
             class="
-              border
-              border-black
+              border border-black
               w-full
               md:w-52
               flex
@@ -82,14 +81,36 @@
               mt-16
               p-5
               rounded-md
-              hover:bg-white
-              hover:text-black
-              hover:border-white
+              hover:bg-white hover:text-black hover:border-white
             "
           >
             <h1>Learn More</h1>
-            <img :src="require('@/assets/icons/Right.png')" class="w-6 h-4 ml-2">
+            <img
+              :src="require('@/assets/icons/Right.png')"
+              class="w-6 h-4 ml-2"
+            />
           </button>
+        </template>
+        <template #picture>
+          <div
+            class="
+              block
+              w-96
+              h-full
+              bg-pink-100
+              rounded-full
+              border-2
+              mt-10
+              lg:mt-0
+              mx-auto
+              overflow-hidden
+            "
+          >
+            <img
+              :src="require('@/assets/images/cta_pic1.png')"
+              class="w-full object-cover"
+            />
+          </div>
         </template>
       </CtaContainer>
     </div>
