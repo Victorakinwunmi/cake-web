@@ -106,7 +106,7 @@
             <div
               class="
                 block
-                lg:w-96
+                lg:w-full
                 h-full
                 bg-pink-100
                 rounded-full
@@ -114,12 +114,11 @@
                 mt-10
                 lg:mt-0
                 mx-auto
-                overflow-hidden
               "
             >
               <img
-                :src="require('@/assets/images/cta_pic1.png')"
-                class="w-full object-cover"
+                :src="require('@/assets/images/cake.png')"
+                class="w-full -mt-10"
               />
             </div>
           </template>
@@ -136,7 +135,7 @@
           <div class="mt-6 px-10">
             <h1 class="font-bold text-3xl lg:text-5xl">Cupcakes</h1>
           </div>
-          <div class="px-16 grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+          <div class="px-8 xl:px-16 grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
             <ServicesList
               v-for="item in cupcakes"
               :key="item.id"
