@@ -80,27 +80,29 @@
             </div>
           </template>
           <template #orderbtn>
-            <button
-              class="
-                border border-black
-                w-full
-                md:w-52
-                flex
-                justify-center
-                border
-                items-center
-                mt-16
-                p-5
-                rounded-md
-                hover:bg-white hover:text-black hover:border-white
-              "
-            >
-              <h1>Learn More</h1>
-              <img
-                :src="require('@/assets/icons/Right.png')"
-                class="w-6 h-4 ml-2"
-              />
-            </button>
+            <a href="./menupage">
+              <button
+                class="
+                  border border-black
+                  w-full
+                  md:w-52
+                  flex
+                  justify-center
+                  border
+                  items-center
+                  mt-16
+                  p-5
+                  rounded-md
+                  hover:bg-white hover:text-black hover:border-white
+                "
+              >
+                <h1>Learn More</h1>
+                <img
+                  :src="require('@/assets/icons/Right.png')"
+                  class="w-6 h-4 ml-2"
+                />
+              </button>
+            </a>
           </template>
           <template #picture>
             <div
@@ -127,50 +129,62 @@
     </div>
 
     <div class="">
-        <div class="-mt-8 mx-auto w-11/12 rounded-md md:w-96 p-10 bg-white shadow-xl">
-          <h1 class="text-center font-bold text-4xl md:text-5xl">Our Services</h1>
-        </div>
+      <div
+        class="-mt-8 mx-auto w-11/12 rounded-md md:w-96 p-10 bg-white shadow-xl"
+      >
+        <h1 class="text-center font-bold text-4xl md:text-5xl">Our Services</h1>
+      </div>
 
-        <div>
-          <div class="mt-6 px-10">
-            <h1 class="font-bold text-3xl lg:text-5xl">Cupcakes</h1>
-          </div>
-          <div class="px-8 xl:px-16 grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-            <ServicesList
-              v-for="item in cupcakes"
-              :key="item.id"
-              :title="item.title"
-              :pic="item.pic"
-            />
-          </div>
+      <div>
+        <div class="mt-6 px-10">
+          <h1 class="font-bold text-3xl lg:text-5xl">Cupcakes</h1>
         </div>
+        <div
+          class="
+            px-8
+            xl:px-16
+            grid
+            gap-6
+            grid-cols-1
+            md:grid-cols-2
+            lg:grid-cols-3
+          "
+        >
+          <ServicesList
+            v-for="item in cupcakes"
+            :key="item.id"
+            :title="item.title"
+            :pic="item.pic"
+          />
+        </div>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
 export default {
-   data() {
+  data() {
     return {
-       cupcakes:[
-          {
-            id:1,
-            title:"Strawberry",
-            pic: require('@/assets/images/strawberry.png')
-          },
-          {
-            id:2,
-            title:"Caramel Apple pie",
-            pic: require('@/assets/images/caramel.png')
-          },
-          {
-            id:3,
-            title:"Red velvet",
-            pic: require('@/assets/images/velvet.png')
-          },
-       ],
+      cupcakes: [
+        {
+          id: 1,
+          title: "Strawberry",
+          pic: require("@/assets/images/strawberry.png"),
+        },
+        {
+          id: 2,
+          title: "Caramel Apple pie",
+          pic: require("@/assets/images/caramel.png"),
+        },
+        {
+          id: 3,
+          title: "Red velvet",
+          pic: require("@/assets/images/velvet.png"),
+        },
+      ],
     };
-   }
+  },
 };
 </script>
 
