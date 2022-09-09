@@ -66,12 +66,63 @@
           </div>
         </div>
       </div>
+
+      <div class="bg-gradient-to-t from-pink-200 to-white py-16">
+        <div class="text-center mb-4">
+          <h1 class="font-bold text-2xl md:text-5xl">Choose your favorite flavour</h1>
+          <p class="mt-4 text-sm font-bold md:text-xl">Try our best custom designed cakes</p>
+          <p class="text-sm text-gray-500 ">Click on the cake to order</p>
+        </div>
+        <div
+          class="
+            px-8
+            grid
+            gap-6
+            grid-cols-1
+            md:grid-cols-2
+            lg:grid-cols-3
+          "
+        >
+          <MenuList
+            v-for="item in menus"
+            :key="item.id"
+            :title="item.title"
+            :pic="item.pic"
+            :desc="item.desc"
+          />
+        </div>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      menus: [
+        {
+          id: 1,
+          title: "Plain Cake",
+          pic: require("@/assets/images/strawberry.png"),
+          desc:"how are yoo"
+        },
+        {
+          id: 2,
+          title: "Strawberry Cake",
+          pic: require("@/assets/images/caramel.png"),
+          desc:"how are yoo"
+        },
+        {
+          id: 3,
+          title: "Custom Cake",
+          pic: require("@/assets/images/velvet.png"),
+          desc:"how are yoo"
+        },
+      ],
+    };
+  },
+};
 </script>
 
 <style>
