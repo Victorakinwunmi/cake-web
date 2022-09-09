@@ -57,7 +57,7 @@
                <h1 class="font-bold text-3xl md:text-4xl lg:text-7xl">Find perfect <span class="text-pink-500">cakes</span> and <span class="text-pink-500">bakes</span> company near you</h1>
                <p class="text-base lg:text-xl mt-10">Take a look at our menus below, choose your favorite porducts and place an order</p>
                <div class="border border-black rounded-full w-44 mt-8 justify-center p-2 flex">
-                  <a href="https://wa.me/+2348104782750"><img :src="require('@/assets/icons/whatsapp.png')" class="lg:w-10 w-8"></a>
+                  <a href="https://wa.me/+2348107546757"><img :src="require('@/assets/icons/whatsapp.png')" class="lg:w-10 w-8"></a>
                   <a href=""> <img :src="require('@/assets/icons/facebook.png')" class="lg:w-10 w-8"></a>
                   <a href=""><img :src="require('@/assets/icons/instagram.png')" class="lg:w-10 w-8"></a>
                   <a href=""> <img :src="require('@/assets/icons/twitter.png')" class="lg:w-10 w-8"></a>     
