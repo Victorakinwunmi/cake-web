@@ -51,7 +51,7 @@
       </HeadersContainer>
 
       <div>
-        <div class="bg-no-repeat bg-cover bg-center" :style="{backgroundRepeat: 'no-repeat' + ';' , backgroundImage: 'url(' + require('@/assets/images/cake04.jpg') +')'}">
+        <div class="bg-no-repeat bg-cover bg-center" :style="{backgroundRepeat: 'no-repeat' + ';' , backgroundImage: 'url(' + require('@/assets/images/Cake04.jpg') +')'}">
           <div class="bg-gray-300 px-10 py-44 lg:py-60 bg-opacity-80 w-full">
              <div class="lg:px-16 max-w-3xl">
                <h1 class="font-bold text-3xl md:text-4xl lg:text-7xl">Find perfect <span class="text-pink-500">cakes</span> and <span class="text-pink-500">bakes</span> company near you</h1>
