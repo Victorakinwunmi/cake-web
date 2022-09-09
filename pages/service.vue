@@ -136,7 +136,7 @@
       </div>
 
       <div>
-        <div class="mt-6 px-10">
+        <div class="mt-10 px-8 lg:px-16">
           <h1 class="font-bold text-3xl lg:text-5xl">Cupcakes</h1>
         </div>
         <div
@@ -159,6 +159,8 @@
         </div>
       </div>
     </div>
+
+
   </div>
 </template>
 
