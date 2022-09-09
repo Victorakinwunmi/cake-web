@@ -130,9 +130,9 @@
 
     <div class="">
       <div
-        class="-mt-8 mx-auto w-11/12 rounded-md md:w-96 p-10 bg-white shadow-xl"
+        class="-mt-8 mx-auto max-w-sm rounded-md p-10 bg-white shadow-xl"
       >
-        <h1 class="text-center font-bold text-4xl md:text-5xl">Our Services</h1>
+        <h1 class="text-center font-bold text-2xl md:text-4xl">Our Best Selling Categories</h1>
       </div>
 
       <div>
