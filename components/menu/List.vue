@@ -9,7 +9,7 @@
           </h1>
           <p class="text-center mt-4 max-w-sm md:max-w-md px-8 mx-auto">{{ desc }}</p>
         </div>
-        <button class="w-full flex items-center transition duration-700 ease-in-out opacity-0 group-hover:opacity-100 justify-center">
+        <button @click="$emit('toggledialog')" class="w-full flex items-center transition duration-700 ease-in-out opacity-0 group-hover:opacity-100 justify-center">
           <h1 class="font-black">Buy now</h1>
           <img :src="require('@/assets/icons/Right.png')" class="w-4 mx-2">
         </button>

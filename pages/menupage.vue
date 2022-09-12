@@ -67,6 +67,8 @@
         </div>
       </div>
 
+      <BigModal :Show="show_modal" @cancel="toggleModal" >This is the modal content. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni facilis, cum consequuntur eius laboriosam minima distinctio magnam ex aperiam possimus est rerum eveniet labore ullam a? Temporibus, earum! Esse, repudiandae.</BigModal>
+
       <div class="bg-gradient-to-t from-pink-200 to-white py-16">
         <div class="text-center mb-4">
           <h1 class="font-bold text-2xl md:text-5xl">Choose your favorite flavour</h1>
@@ -83,7 +85,7 @@
             lg:grid-cols-3
           "
         >
-          <MenuList
+          <MenuList @toggledialog="toggleModal"
             v-for="item in menus"
             :key="item.id"
             :title="item.title"
@@ -127,8 +129,17 @@ export default {
                `
         },
       ],
-    };
+
+      show_modal: false,
+    }
+
   },
+
+  methods : {
+    toggleModal(){
+      this.show_modal = !this.show_modal
+    }
+  }
 };
 </script>
 
