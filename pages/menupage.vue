@@ -67,7 +67,31 @@
         </div>
       </div>
 
-      <BigModal :Show="show_modal" @cancel="toggleModal" >This is the modal content. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni facilis, cum consequuntur eius laboriosam minima distinctio magnam ex aperiam possimus est rerum eveniet labore ullam a? Temporibus, earum! Esse, repudiandae.</BigModal>
+      <BigModal :Show="show_modal" @cancel="toggleModal" >
+        <template #title>
+          <div>Welcome</div>
+        </template>
+         <template #desc>
+          <div>Kindly click on the button below to discuss more about your order request on whatsapp</div>
+        </template>
+         <div class="max-w-xl mx-auto">
+          <div class="block">
+            <input type="text" placeholder="Which of our products do you want?" class="w-full outline-none p-5 border-2 rounded-md border-gray-300 mb-2 truncate">
+            <input type="text" placeholder="Description of the product?" class="w-full outline-none p-5 border-2 rounded-md border-gray-300 truncate">
+          </div>
+          <div class="block ">
+            <input type="text" placeholder="Quantity of the product?" class="w-full outline-none p-5 border-2 rounded-md border-gray-300 mb-2 mt-2 truncate">
+            <input type="text" placeholder="when do you want it to be delivered?" class="w-full outline-none p-5 border-2 rounded-md border-gray-300 truncate">
+          </div>
+         
+          <a href="https://wa.me/+2348107546757">
+            <div class="flex items-center mt-2 justify-center border border-gray-200 shadow-lg p-4 mt-6 bg-gray-100 rounded-md">
+            <img :src="require('@/assets/icons/whatsapp.png')" class="lg:w-10 w-8 mr-4">
+              <h1 class="truncate text-gray-400 font-semibold">Kindly leave us a message on whatsapp to discuss more about your order</h1>
+            </div>
+          </a>
+         </div>
+      </BigModal>
 
       <div class="bg-gradient-to-t from-pink-200 to-white py-16">
         <div class="text-center mb-4">

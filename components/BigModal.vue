@@ -3,7 +3,7 @@
     
     <div class="fixed top-0 w-full blur bg-opacity-50 z-90" v-show="Show">
       <div class="relative min-h-screen bg-white bg-opacity-25 flex justify-center items-center lg:px-0 ">
-        <div class="bg-white w-3/4 md:w-1/2 lg:1/3 flex justify-center items-center h-96 top-0">
+        <div class="bg-white w-3/4 md:w-3/4 xl:w-2/4 flex justify-center items-center top-0">
         <transition name="page">
           
           <div v-show="Show" :class="MaxWidth" class="z-110 relative top-0 overflow-hidden sm:rounded-t-3xl w-full md:max-w-7xl">
@@ -25,10 +25,12 @@
               </div>
               
             </div>
+            <div class="font-semibold text-sm sm:text-sm text-gray-500 md:text-lg py-6 md:px-6 ml-4 lg:text-center">
+                <slot name="desc"></slot>
+            </div>
             
             <div class="">
-              <div class="w-full px-4 sm:px-6 custom-scroll-y h-screen-80 
-md:h-screen-75">
+              <div class="w-full px-4 sm:px-6 custom-scroll-y h-screen-80 md:h-screen-75">
                 <div class="py-4 md:px-4 text-sm sm:text-base">
                   <slot></slot>
                 </div>
