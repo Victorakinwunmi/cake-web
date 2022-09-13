@@ -140,10 +140,10 @@
             </select>
           </div>
           <div class="w-full outline-none p-4 border-2 rounded-md border-gray-300 mb-2 mt-2">
-            <input type="text" placeholder="Please type your Address" class="outline-none text-gray-400 font-semibold">
+            <input type="text" placeholder="Please type your Address" class="outline-none text-gray-400 w-full font-semibold">
           </div>
            <div class="w-full outline-none p-4 border-2 rounded-md border-gray-300 mb-2 mt-2">
-            <input type="number" placeholder="Please type your Phone no." class="outline-none text-gray-400 font-semibold">
+            <input type="number" placeholder="Please type your Phone no." class="outline-none text-gray-400 w-full font-semibold">
           </div>
           
 
