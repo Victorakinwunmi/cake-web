@@ -119,7 +119,7 @@
         <div class="max-w-xl mx-auto">
           <div class="w-full outline-none p-4 border-2 rounded-md border-gray-300 mb-2 mt-2">
             <h1 class="text-gray-400 font-bold">Which of our products do you want?</h1>
-            <select class="text-gray-400 outline-none py-2">
+            <select class="text-gray-400 outline-none py-2 bg-white">
               <option value="Naked cake" class="font-bold">Naked cake</option>
               <option value="Strawberry cake" class="font-bold">Strawberry cake</option>
               <optgroup label="Custom cake">
