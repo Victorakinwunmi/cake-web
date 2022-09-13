@@ -1,4 +1,5 @@
 <template>
+<div class="">
   <div class="mb-4">
     <button 
       @click="toggleAccordion()" 
@@ -34,6 +35,8 @@
       <slot name="content" />
     </div>
   </div>
+</div>
+
 </template>
 
 <script>
