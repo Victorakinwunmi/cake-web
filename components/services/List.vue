@@ -13,7 +13,7 @@
   >
     <div class="flex justify-center items-center mt-3">
       <div class="">
-        <h1 class="text-black text-xl lg:text-3xl font-bold">{{ title }}</h1>
+        <h1 class="text-black text-xl lg:text-2xl font-bold">{{ title }}</h1>
         <a href="./menupage">
           <button
             class="

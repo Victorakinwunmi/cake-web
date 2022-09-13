@@ -130,7 +130,7 @@ export default {
         {
           id: 1,
           title: "Naked Cake",
-          pic: require("@/assets/images/strawberry.png"),
+          pic: require("@/assets/images/naked.png"),
           desc:`Best cake for normal occasion parties and even
                 after lunch you can have this light cake with cheese
                 `
@@ -138,7 +138,7 @@ export default {
         {
           id: 2,
           title: "Strawberry Cake",
-          pic: require("@/assets/images/caramel.png"),
+          pic: require("@/assets/images/straw.png"),
           desc:`Our website is User-friendly you can order by just
                 clicking on (Buy now) and 3 simple steps and you will
                 receive your order within 24 hours
@@ -147,7 +147,7 @@ export default {
         {
           id: 3,
           title: "Custom Cake",
-          pic: require("@/assets/images/velvet.png"),
+          pic: require("@/assets/images/chiffoncake.png"),
           desc:`We prepare custom cake as per clients requirements just 
                 clicking on 3 simple steps and you will receive
                `

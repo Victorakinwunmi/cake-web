@@ -129,15 +129,15 @@
     </div>
 
     <div class="">
-      <div
-        class="-mt-8 mx-auto max-w-sm rounded-md p-10 bg-white shadow-xl"
-      >
-        <h1 class="text-center font-bold text-2xl md:text-4xl">Our Best Selling Categories</h1>
+      <div class="-mt-8 mx-auto max-w-sm rounded-md p-10 bg-white shadow-xl">
+        <h1 class="text-center font-bold text-2xl md:text-4xl">
+          Our Best Selling Categories
+        </h1>
       </div>
 
       <div>
         <div class="mt-10 px-8 lg:px-16">
-          <h1 class="font-bold text-3xl lg:text-5xl">Cupcakes</h1>
+          <h1 class="font-bold text-3xl lg:text-4xl">Cupcakes</h1>
         </div>
         <div
           class="
@@ -158,9 +158,76 @@
           />
         </div>
       </div>
+      <div>
+        <div class="mt-10 px-8 lg:px-16">
+          <h1 class="font-bold text-3xl lg:text-4xl">Birthday Cakes</h1>
+        </div>
+        <div
+          class="
+            px-8
+            xl:px-16
+            grid
+            gap-6
+            grid-cols-1
+            md:grid-cols-2
+            lg:grid-cols-3
+          "
+        >
+          <ServicesList
+            v-for="item in birthdayCakes"
+            :key="item.id"
+            :title="item.title"
+            :pic="item.pic"
+          />
+        </div>
+      </div>
+      <div>
+        <div class="mt-10 px-8 lg:px-16">
+          <h1 class="font-bold text-3xl lg:text-4xl">Wedding Cakes</h1>
+        </div>
+        <div
+          class="
+            px-8
+            xl:px-16
+            grid
+            gap-6
+            grid-cols-1
+            md:grid-cols-2
+            lg:grid-cols-3
+          "
+        >
+          <ServicesList
+            v-for="item in weddingCakes"
+            :key="item.id"
+            :title="item.title"
+            :pic="item.pic"
+          />
+        </div>
+      </div>
+      <div>
+        <div class="mt-10 px-8 lg:px-16">
+          <h1 class="font-bold text-3xl lg:text-4xl">Cocktail and Moctail</h1>
+        </div>
+        <div
+          class="
+            px-8
+            xl:px-16
+            grid
+            gap-6
+            grid-cols-1
+            md:grid-cols-2
+            lg:grid-cols-3
+          "
+        >
+          <ServicesList
+            v-for="item in cocktailMocktail"
+            :key="item.id"
+            :title="item.title"
+            :pic="item.pic"
+          />
+        </div>
+      </div>
     </div>
-
-
   </div>
 </template>
 
@@ -183,6 +250,55 @@ export default {
           id: 3,
           title: "Red velvet",
           pic: require("@/assets/images/velvet.png"),
+        },
+      ],
+
+      birthdayCakes: [
+        {
+          id: 1,
+          title: "Chiffon cake",
+          pic: require("@/assets/images/chiffoncake.png"),
+        },
+        {
+          id: 2,
+          title: "pound cake",
+          pic: require("@/assets/images/poundcake.png"),
+        },
+        {
+          id: 3,
+          title: "sponge cake",
+          pic: require("@/assets/images/spongecake.png"),
+        },
+      ],
+
+      weddingCakes: [
+        {
+          id: 1,
+          title: "Carved cake",
+          pic: require("@/assets/images/carved.png"),
+        },
+        {
+          id: 2,
+          title: "Fondant Covered Cakes",
+          pic: require("@/assets/images/fondant.png"),
+        },
+      ],
+
+      cocktailMocktail: [
+        {
+          id: 1,
+          title: "Apple Fizz",
+          pic: require("@/assets/images/applefizz.png"),
+        },
+        {
+          id: 2,
+          title: "Mojito",
+          pic: require("@/assets/images/mojito.png"),
+        },
+        {
+          id: 3,
+          title: "Manhattan",
+          pic: require("@/assets/images/manhattan.png"),
         },
       ],
     };
