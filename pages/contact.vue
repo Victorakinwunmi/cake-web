@@ -48,7 +48,77 @@
           <HeadersButton />
         </template>
       </HeadersContainer>
-    </div>
+
+     <div class="block lg:flex">
+        <div class="w-6/12 hidden lg:block">
+            <div
+              class="bg-no-repeat bg-cover bg-center"
+              :style="{
+                backgroundRepeat: 'no-repeat' + ';',
+                backgroundImage:
+                  'url(' + require('@/assets/images/Cake09.jpg') + ')',
+              }"
+            >
+              <div class="bg-gray-300 px-10 h-screen py-44 lg:py-60 bg-opacity-50 w-full">
+                <div>
+                  <h1 class="font-bold text-6xl max-w-lg mx-auto leading-snug">We would love to hear from you</h1>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <div class="w-full lg:w-6/12 py-40 px-12 lg:px-4 xl:px-16">
+          <div>
+            <h1 class="font-bold text-4xl">Contact Us</h1>
+          </div>
+          <div>
+            <div class="block lg:flex">
+               <div class="py-10 md:w-8/12 lg:w-6/12 cursor-pointer">
+                 <h1 class="font-semibold text-base">FIRST NAME</h1>
+                 <input type="text" placeholder="Enter your first name" class="outline-none border-b-2 border-gray-400 hover:border-black w-full py-4 text-xl">
+               </div>
+               <div class="py-10 md:w-8/12 lg:w-6/12 lg:ml-8 cursor-pointer">
+                  <h1 class="font-semibold text-base">LAST NAME</h1>
+                  <input type="text" placeholder="Enter your last name" class="outline-none border-b-2 border-gray-400 hover:border-black w-full py-4 text-xl">
+               </div>
+
+            </div>
+          </div>
+
+          <div>
+            <div class="block lg:flex">
+               <div class="py-10 md:w-8/12 lg:w-6/12 cursor-pointer">
+                 <h1 class="font-semibold text-base">EMAIL</h1>
+                 <input type="email" placeholder="Enter your email" class="outline-none border-b-2 border-gray-400 hover:border-black w-full py-4 text-xl">
+               </div>
+               <div class="py-10 md:w-8/12 lg:w-6/12 lg:ml-8 cursor-pointer">
+                  <h1 class="font-semibold text-base">PHONE NUMBER</h1>
+                  <input type="number" placeholder="Enter your phone number" class="outline-none border-b-2 border-gray-400 hover:border-black w-full py-4 text-xl">
+               </div>
+
+            </div>
+          </div>
+
+         
+          <div class="block ">
+              <div class="py-10 w-full md:w-8/12 lg:w-full cursor-pointer">
+                <h1 class="font-semibold text-base">MESSAGE</h1>
+                <input type="email" placeholder="Enter your message" class="outline-none border-b-2 border-gray-400 hover:border-black w-full py-4 text-xl">
+              </div>
+          </div>
+
+          <button class="flex items-center gap-2 mt-4">
+            <button class="font-semibold text-base">SUBMIT</button>
+            <img :src="require('@/assets/icons/Right.png')" class="w-4 h-3">
+          </button>
+
+          <a href="/">
+            <h1 class="font-semibold mt-10 text-base text-gray-400">EMAIL US</h1>
+            <h1 class="text-xl">adedapoabosederachael@gmail.com</h1>
+          </a>
+        </div>
+     </div>
+  </div>
 </template>
 
 <script>
