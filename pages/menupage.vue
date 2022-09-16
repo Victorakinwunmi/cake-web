@@ -142,14 +142,14 @@
 
           <div class="mb-2 mt-5">
             <div class="w-full outline-none p-4 border-2 rounded-md border-gray-300">
-               <div class="-mt-7 font-bold text-gray-400 w-16 text-center bg-white">Address</div>
+               <div class="-mt-7 mb-4 rounded-full font-bold text-gray-400 w-16 text-center bg-white">Address</div>
               <input type="text" placeholder="Please enter your Address" class="outline-none text-gray-400 w-full">
             </div>
           </div>
 
           <div class="mb-2 mt-5">
               <div class="w-full outline-none p-4 border-2 rounded-md border-gray-300">
-                <div class="-mt-7 font-bold text-gray-400 w-20 text-center bg-white">Phone no</div>
+                <div class="-mt-7 mb-4 font-bold text-gray-400 w-20 text-center bg-white rounded-full">Phone no</div>
                 <input type="number" placeholder="Please enter your Phone number" class="outline-none text-gray-400 w-full">
               </div>
           </div>
