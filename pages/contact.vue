@@ -73,12 +73,12 @@
           </div>
         </div>
       </div>
-
+    <div class="w-full lg:w-6/12 py-40 px-12 lg:px-4 xl:px-16">
       <form
         @submit.prevent="handleMessage"
-        class="w-full lg:w-6/12 py-40 px-12 lg:px-4 xl:px-16"
+        class=""
       >
-        <h1 class="font-bold text-4xl text-center lg:text-left">Contact Us</h1>
+        <h1 class="font-bold text-4xl text-center lg:text-left mb-10 lg:mb-4">Contact Us</h1>
         <div class="block lg:flex">
           <div class="py-10 md:w-8/12 lg:w-full cursor-pointer mx-auto">
             <h1 class="font-semibold text-base">YOUR NAME</h1>
@@ -110,6 +110,7 @@
                 w-full
                 text-xl
               "
+              rows="5"
             ></textarea>
           </div>
         </div>
@@ -119,14 +120,13 @@
           <img :src="require('@/assets/icons/Right.png')" class="w-4 h-3" />
         </button>
 
-       
-       <button class="mt-16 text-center w-full lg:text-left">
-          <div class="font-semibold">EMAIL US</div>
-          <div> adedapoabosederachael@gmail.com</div>
-       </button>
-
       </form>
 
+      <button class="mt-16 text-center w-full lg:text-left">
+          <div class="font-semibold">EMAIL US</div>
+          <div> adedapoabosederachael@gmail.com</div>
+      </button>
+    </div>
       
     </div>
   </div>
