@@ -73,7 +73,7 @@
           </div>
         </div>
       </div>
-    <div class="w-full lg:w-6/12 py-40 px-12 lg:px-4 xl:px-16">
+    <div class="w-full lg:w-6/12 pt-40 px-12 lg:px-4 xl:px-16">
       <form
         @submit.prevent="handleMessage"
         class=""
