@@ -73,11 +73,11 @@
           </div>
           <div>
             <div class="block lg:flex">
-               <div class="py-10 md:w-8/12 lg:w-6/12 cursor-pointer">
+               <div class="py-10 md:w-8/12 lg:w-6/12 cursor-pointer mx-auto">
                  <h1 class="font-semibold text-base">FIRST NAME</h1>
                  <input type="text" placeholder="Enter your first name" class="outline-none border-b-2 border-gray-400 hover:border-black w-full py-4 text-xl">
                </div>
-               <div class="py-10 md:w-8/12 lg:w-6/12 lg:ml-8 cursor-pointer">
+               <div class="py-10 md:w-8/12 lg:w-6/12 lg:ml-8 cursor-pointer  mx-auto">
                   <h1 class="font-semibold text-base">LAST NAME</h1>
                   <input type="text" placeholder="Enter your last name" class="outline-none border-b-2 border-gray-400 hover:border-black w-full py-4 text-xl">
                </div>
@@ -87,11 +87,11 @@
 
           <div>
             <div class="block lg:flex">
-               <div class="py-10 md:w-8/12 lg:w-6/12 cursor-pointer">
+               <div class="py-10 md:w-8/12 lg:w-6/12 cursor-pointer  mx-auto">
                  <h1 class="font-semibold text-base">EMAIL</h1>
                  <input type="email" placeholder="Enter your email" class="outline-none border-b-2 border-gray-400 hover:border-black w-full py-4 text-xl">
                </div>
-               <div class="py-10 md:w-8/12 lg:w-6/12 lg:ml-8 cursor-pointer">
+               <div class="py-10 md:w-8/12 lg:w-6/12 lg:ml-8 cursor-pointer  mx-auto">
                   <h1 class="font-semibold text-base">PHONE NUMBER</h1>
                   <input type="number" placeholder="Enter your phone number" class="outline-none border-b-2 border-gray-400 hover:border-black w-full py-4 text-xl">
                </div>
@@ -101,18 +101,18 @@
 
          
           <div class="block ">
-              <div class="py-10 w-full md:w-8/12 lg:w-full cursor-pointer">
+              <div class="py-10 w-full md:w-8/12 lg:w-full cursor-pointer  mx-auto">
                 <h1 class="font-semibold text-base">MESSAGE</h1>
                 <input type="email" placeholder="Enter your message" class="outline-none border-b-2 border-gray-400 hover:border-black w-full py-4 text-xl">
               </div>
           </div>
 
-          <button class="flex items-center gap-2 mt-4">
+          <button class="flex items-center gap-2 mt-4 mx-auto lg:mx-0">
             <button class="font-semibold text-base">SUBMIT</button>
             <img :src="require('@/assets/icons/Right.png')" class="w-4 h-3">
           </button>
 
-          <a href="/">
+          <a href="/" class="text-center lg:text-left">
             <h1 class="font-semibold mt-10 text-base text-gray-400">EMAIL US</h1>
             <h1 class="text-xl">adedapoabosederachael@gmail.com</h1>
           </a>
