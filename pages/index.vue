@@ -269,11 +269,68 @@
          </template>
       </AccordionAppAccordion>
     </div>
+    <BigModal :show="popup" @cancel="closeModal">
+      <template #title>
+        <h1>Welcome</h1>
+      </template>
+      <template #desc>
+         <h1>Kindly input your address and phone number to enhance your accessibilities on this website</h1>
+      </template>
+      <div class="mb-2 mt-5">
+        <div class="w-full outline-none p-4 border-2 rounded-md border-gray-300">
+            <div class="-mt-7 mb-4 rounded-full font-bold text-gray-400 w-16 text-center bg-white">Address</div>
+          <input type="text" placeholder="Please enter your Address" class="outline-none text-gray-400 w-full">
+        </div>
+      </div>
+
+      <div class="mb-2 mt-5">
+          <div class="w-full outline-none p-4 border-2 rounded-md border-gray-300">
+            <div class="-mt-7 mb-4 font-bold text-gray-400 w-20 text-center bg-white rounded-full">Phone no</div>
+            <input type="number" placeholder="Please enter your Phone number" class="outline-none text-gray-400 w-full">
+          </div>
+      </div>
+
+      <button class="flex gap-2 items-center border bg-gray-400 w-44 mx-auto justify-center p-4 mt-4 rounded-md">
+        <h1 class="font-bold">Submit</h1>
+        <img :src="require('@/assets/icons/Right.png')" class="w-6 h-4">
+      </button>
+    </BigModal>
   </div>
 </template>
 
 <script>
 export default {
+  props:{
+    popupPoint:{
+      default:500,
+      type:Number,
+    }
+  },
+  data(){
+    return{
+      popup:false,
+    };
+  },
+  methods:{
+    closeModal(){
+      this.popup=!this.popup;
+    },
+
+    handleStickyNavigation() {
+      if (window.pageYOffset > this.popupPoint) {
+        this.popup = true;
+      } else {
+        this.popup = false;
+      }
+    },
+  },
+  beforeMount() {
+    window.addEventListener("scroll", this.handleStickyNavigation);
+  },
+
+  beforeDestroy() {
+    window.removeEventListener("scroll", this.handleStickyNavigation);
+  },
 };
 </script>
 
