@@ -59,7 +59,7 @@
                   'url(' + require('@/assets/images/Cake09.jpg') + ')',
               }"
             >
-              <div class="bg-gray-300 px-10 h-screen py-44 lg:py-60 bg-opacity-50 w-full">
+              <div class="bg-gray-300 px-10 h-screen py-72 bg-opacity-50 w-full">
                 <div>
                   <h1 class="font-bold text-6xl text-gray-800 max-w-lg mx-auto leading-snug">We would love to hear from you</h1>
                 </div>
