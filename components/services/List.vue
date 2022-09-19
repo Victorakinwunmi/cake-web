@@ -8,6 +8,7 @@
       from-pink-200
       to-pink-100
       mt-10
+      md:mb-10
       rounded-3xl
     "
   >
