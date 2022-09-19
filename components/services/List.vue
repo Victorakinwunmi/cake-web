@@ -36,6 +36,7 @@
           </button>
         </a>
       </div>
+      
       <div class="ml-2 md:ml-4">
         <div class="block w-44 rounded-full mx-auto overflow-hidden">
           <img :src="pic" class="w-11/12 object-cover" />

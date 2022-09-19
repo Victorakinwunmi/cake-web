@@ -291,7 +291,7 @@ export default {
         {
           id: 2,
           title: "Fondant Covered Cakes",
-          pic: require("@/assets/images/fondant.png"),
+          pic: require("@/assets/images/carved.png"),
           price:460.5,
         },
       ],

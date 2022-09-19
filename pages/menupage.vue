@@ -247,7 +247,7 @@ export default {
     },
 
     handleChoicePicked(){
-       window.location = 'https://api.whatsapp.com/send?phone=2348107546757&text=' + 'Hey, I would like to order for' + this.product_quantity + ' ' + this.customer_product 
+       window.location = 'https://api.whatsapp.com/send?phone=2348107546757&text=' + 'Hey, I would like to order for' + ' ' + this.product_quantity + ' ' + this.customer_product 
     }
   },
 };
