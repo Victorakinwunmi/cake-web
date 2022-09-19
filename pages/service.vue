@@ -155,6 +155,7 @@
             :key="item.id"
             :title="item.title"
             :pic="item.pic"
+            :price="item.price"
           />
         </div>
       </div>
@@ -178,6 +179,7 @@
             :key="item.id"
             :title="item.title"
             :pic="item.pic"
+            :price="item.price"
           />
         </div>
       </div>
@@ -201,6 +203,7 @@
             :key="item.id"
             :title="item.title"
             :pic="item.pic"
+            :price="item.price"
           />
         </div>
       </div>
@@ -224,6 +227,7 @@
             :key="item.id"
             :title="item.title"
             :pic="item.pic"
+            :price="item.price"
           />
         </div>
       </div>
@@ -240,16 +244,19 @@ export default {
           id: 1,
           title: "Strawberry",
           pic: require("@/assets/images/strawberry.png"),
+          price:20,
         },
         {
           id: 2,
           title: "Caramel Apple pie",
           pic: require("@/assets/images/caramel.png"),
+          price:50,
         },
         {
           id: 3,
           title: "Red velvet",
           pic: require("@/assets/images/velvet.png"),
+          price:15,
         },
       ],
 
@@ -258,16 +265,19 @@ export default {
           id: 1,
           title: "Chiffon cake",
           pic: require("@/assets/images/chiffoncake.png"),
+          price:350,
         },
         {
           id: 2,
           title: "pound cake",
           pic: require("@/assets/images/poundcake.png"),
+          price:155,
         },
         {
           id: 3,
           title: "sponge cake",
           pic: require("@/assets/images/spongecake.png"),
+          price:100,
         },
       ],
 
@@ -276,11 +286,13 @@ export default {
           id: 1,
           title: "Carved cake",
           pic: require("@/assets/images/carved.png"),
+          price:500,
         },
         {
           id: 2,
           title: "Fondant Covered Cakes",
           pic: require("@/assets/images/fondant.png"),
+          price:460.5,
         },
       ],
 
@@ -289,16 +301,19 @@ export default {
           id: 1,
           title: "Apple Fizz",
           pic: require("@/assets/images/applefizz.png"),
+          price:51.6,
         },
         {
           id: 2,
           title: "Mojito",
           pic: require("@/assets/images/mojito.png"),
+          price:30,
         },
         {
           id: 3,
           title: "Manhattan",
           pic: require("@/assets/images/manhattan.png"),
+          price:45.9,
         },
       ],
     };

@@ -15,15 +15,18 @@
     <div class="flex justify-center items-center mt-3">
       <div class="">
         <h1 class="text-black text-xl lg:text-2xl font-bold">{{ title }}</h1>
+        <h1 class="font-bold mt-4 text-xl">${{price}}</h1>
         <a href="./menupage">
           <button
             class="
               flex
               justify-between
               items-center
-              hover:bg-pink-400 hover:text-black hover:border-pink-400
+              hover:bg-pink-200 hover:text-black hover:border-pink-300
               rounded-md
-              border border-black
+              border border-pink-200
+              bg-pink-100
+              shadow-md
               p-2
               mt-4
             "
@@ -38,6 +41,7 @@
           <img :src="pic" class="w-11/12 object-cover" />
         </div>
       </div>
+      
     </div>
   </div>
 </template>
@@ -48,6 +52,7 @@ export default {
     title: String,
     btn: String,
     pic: String,
+    price:Number,
   },
 };
 </script>
