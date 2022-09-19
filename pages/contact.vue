@@ -138,9 +138,7 @@ export default {
   components: { Button },
   methods: {
     handleMessage(){
-      console.log(this.customer_name, this.customer_message)
-
-      window.location = 'https://api.whatsapp.com/send?phone=2348107546757&text=' + 'Hey, I\'m ' + this.customer_name + ', ' + this.customer_message 
+      window.location = 'https://api.whatsapp.com/send?phone=2348107546757&text=' + 'Hey, I\'m ' + this.customer_name + ', ' + this.customer_message
     }
   },
 
