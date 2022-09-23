@@ -126,9 +126,10 @@
           <div class="font-semibold">EMAIL US</div>
           <div> adedapoabosederachael@gmail.com</div>
       </button>
+
     </div>
-      
-    </div>
+    
+  </div>
   </div>
 </template>
 
@@ -139,13 +140,13 @@ export default {
   methods: {
     handleMessage(){
       window.location = 'https://api.whatsapp.com/send?phone=2348107546757&text=' + 'Hey, I\'m ' + this.customer_name + ', ' + this.customer_message
-    }
+    },
+    
   },
 
   data() {
     return {
-      customer_name: "",
-      customer_message: "",
+     
     };
   },
 };

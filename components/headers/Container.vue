@@ -41,17 +41,17 @@
       <div
         class="block mt-8 mx-6 lg:mx-0 lg:mt-0 lg:flex items-center lg:ml-28"
       >
-        <div>
-          <slot name="search" />
-        </div>
+        <nuxt-link to="/">
+            <slot name="search" />
+        </nuxt-link>
 
-        <div>
-          <slot name="shop" />
-        </div>
+        <nuxt-link to="/">
+            <slot name="shop" />
+        </nuxt-link>
 
-        <div>
+        <nuxt-link to="login">
             <slot name="button" />
-        </div>
+        </nuxt-link>
       </div>
     </div>
   </div>
