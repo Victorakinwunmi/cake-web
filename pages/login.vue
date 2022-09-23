@@ -1,9 +1,9 @@
 <template>
 <div>
-    <div class="bg-gradient-to-t from-pink-200 to-white p-10">
+    <div class="bg-gradient-to-t from-pink-200 to-white p-10 h-56 md:h-full">
         <h1 class="text-5xl font-bold">Welcome</h1>
         <p class="text-black font-semibold m-2">Kindly proceed to the Login</p>
-        <div class="relative bg-gray-100 shadow-xl max-w-2xl p-10 mx-auto h-80 top-56">
+        <div class="relative bg-gray-100 shadow-xl max-w-2xl p-10 mx-auto h-80 top-16 md:top-56">
         <div class="absolute mx-auto right-0 px-10 w-full">
             <form @submit.prevent="userValidation" class="md:px-10">
             <h1 class="text-center font-bold text-2xl">LOGIN</h1>
@@ -39,7 +39,7 @@
       </template>
     </BigModal>
     
-    <div class="pt-56 lg:pt-72 px-4 flex gap-2 items-center justify-center">
+    <div class="pt-80 lg:pt-72 px-4 flex gap-2 items-center justify-center">
         <nuxt-link to="/" class="font-bold">Go back to Homepage</nuxt-link>
         <img :src="require('@/assets/icons/Exit.png')" class="w-6">
     </div>
