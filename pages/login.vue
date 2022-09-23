@@ -30,12 +30,12 @@
     </BigModal>
     <BigModal :Show="wrong_pass" @cancel="userValidation">
       <template #desc>
-         <h1 class="text-lg lg:text-2xl text-center">The passsword you typed is incorrect!</h1>
+         <h1 class="text-base lg:text-xl text-red-500 text-center">The passsword you typed is incorrect!</h1>
       </template>
     </BigModal>
     <BigModal :Show="doesnt_exist" @cancel="userValidation">
       <template #desc>
-         <h1 class="text-lg lg:text-2xl text-center">User does not exist!!</h1>
+         <h1 class="text-base lg:text-xl text-red-500 text-center">User does not exist!!</h1>
       </template>
     </BigModal>
     
