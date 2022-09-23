@@ -38,6 +38,11 @@
          <h1 class="text-lg lg:text-2xl text-center">User does not exist!!</h1>
       </template>
     </BigModal>
+    
+    <div class="pt-56 lg:pt-72 px-4 flex gap-2 items-center justify-center">
+        <nuxt-link to="/" class="font-bold">Go back to Homepage</nuxt-link>
+        <img :src="require('@/assets/icons/Exit.png')" class="w-6">
+    </div>
 </div>
    
 </template>
