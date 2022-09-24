@@ -22,7 +22,7 @@
       </template>
       <template #desc>
          <h1 class="">Congratulations, You've successfully login.</h1>
-         <div class="mt-10">
+         <div class="mt-4 lg:mt-10">
            <i class="">note: The dashboard is currently not available. coming soon!!</i>
          </div>
         
@@ -30,7 +30,7 @@
     </BigModal>
     <BigModal :Show="wrong_pass" @cancel="userValidation">
       <template #desc>
-         <h1 class="text-base lg:text-xl text-red-500 text-center">The passsword you typed is incorrect!</h1>
+         <h1 class="text-base lg:text-xl text-red-500 text-center">Wrong password!</h1>
       </template>
     </BigModal>
     <BigModal :Show="doesnt_exist" @cancel="userValidation">
@@ -65,6 +65,7 @@ export default {
         email: "adexvictor94@gmail.com",
         password: "victor",
       };
+    
       if(this.user_email =="" && this.user_password ==""){
         return
       }else{
