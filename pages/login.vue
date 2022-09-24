@@ -3,17 +3,17 @@
     <div class="bg-gradient-to-t from-pink-200 to-white p-10 h-56 md:h-full">
         <h1 class="text-5xl font-bold">Welcome</h1>
         <p class="text-black font-semibold m-2">Kindly proceed to the Login</p>
-        <div class="relative bg-gray-100 shadow-xl max-w-2xl p-10 mx-auto h-80 top-16 md:top-56">
-        <div class="absolute mx-auto right-0 px-10 w-full">
-            <form @submit.prevent="userValidation" class="md:px-10">
-            <h1 class="text-center font-bold text-2xl">LOGIN</h1>
-            <label class="block mb-2 font-semibold">EMAIL</label>
-            <input type="email" v-model="user_email" class="w-full mb-2 outline-none block mx-auto p-2"/>
-            <label class="block mb-2 font-semibold">PASSWORD</label>
-            <input type="password" v-model="user_password" class="w-full block outline-none mb-2 p-2" />
-            <button class="block py-2 px-5 mx-auto bg-gray-400 rounded-md border shadow-md text-black font-semibold mt-6">enter</button>
-            </form>
-        </div>
+        <div class="relative bg-gray-100 shadow-xl max-w-2xl p-10 mx-auto h-80 top-16 md:top-56 rounded-2xl">
+            <div class="absolute mx-auto right-0 px-10 w-full">
+                <form @submit.prevent="userValidation" class="md:px-10">
+                <h1 class="text-center font-bold text-2xl">LOGIN</h1>
+                <label class="block mb-2 font-semibold">EMAIL</label>
+                <input type="email" v-model="user_email" class="w-full mb-2 outline-none border block mx-auto focus:border-pink-400 rounded-md p-2"/>
+                <label class="block mb-2 font-semibold">PASSWORD</label>
+                <input type="password" v-model="user_password" class="w-full block border outline-none mb-2 p-2 focus:border-pink-400 rounded-md " />
+                <button class="block py-2 px-5 mx-auto bg-gray-300 rounded-md border shadow-md text-black font-bold mt-6 hover:bg-gray-400">ENTER</button>
+                </form>
+            </div>
         </div>
     </div>
     <BigModal :Show="popup" @cancel="userValidation">
