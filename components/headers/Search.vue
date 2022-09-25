@@ -1,5 +1,6 @@
 <template>
-  <div class="">
+  <div class="flex items-center+">
+     <input type="search" placeholder="What are you looking for?" :class="show? 'p-2 bg-transparent outline-none border border-black rounded-full w-56':'hidden'">
     <button>
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -7,6 +8,8 @@
         class="w-7 h-7 fill-current lg:mx-4 hover:text-pink-600 ml-3 lg:ml-0"
         viewBox="0 0 50 50"
         version="1.1"
+        @click="showSearch"
+        :class="show ? 'hidden' : ''"
       >
         <g id="surface1">
           <path
@@ -16,13 +19,31 @@
         </g>
       </svg>
     </button>
+    <button @click="hideSearch"  :class="show ? '' : 'hidden'">
+      <img :src="require('@/assets/icons/Delete.svg')" class="w-6 mr-3 lg:ml-2">
+    </button>
+
   </div>
 </template>
 
 <script>
-import Button from "./Button.vue";
+
 export default {
-  components: { Button },
+  data(){
+    return{
+      show:false,
+    }
+  },
+
+  methods:{
+    showSearch() {
+      this.show = true;
+    },
+    hideSearch() {
+      this.show = false;
+    },
+
+  }
 };
 </script>
 

@@ -41,11 +41,11 @@
       <div
         class="block mt-8 mx-6 lg:mx-0 lg:mt-0 lg:flex items-center lg:ml-28"
       >
-        <nuxt-link to="/">
+        <div>
             <slot name="search" />
-        </nuxt-link>
+        </div>
 
-        <nuxt-link to="/">
+        <nuxt-link to="menupage">
             <slot name="shop" />
         </nuxt-link>
 

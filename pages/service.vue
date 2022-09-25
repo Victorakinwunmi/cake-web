@@ -377,7 +377,7 @@ export default {
         scores:this.user_scores
       };
 
-      if(newUser == ""){
+      if(newUser.name == "" && newUser.class =="" && newUser.scores == ""){
         return
       }else{
          this.users.push(newUser)
