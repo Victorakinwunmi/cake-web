@@ -138,14 +138,19 @@
 export default {
   methods: {
     handleMessage(){
-      window.location = 'https://api.whatsapp.com/send?phone=2348107546757&text=' + 'Hey, I\'m ' + this.customer_name + ', ' + this.customer_message
+      if(this.customer_name == "" && this.customer_message ==""){
+        return
+      }else{
+        window.location = 'https://api.whatsapp.com/send?phone=2348107546757&text=' + 'Hey, I\'m ' + this.customer_name + ', ' + this.customer_message
+      }
     },
     
   },
 
   data() {
     return {
-
+       customer_name:"",
+       customer_message:"",
     };
   },
 };
