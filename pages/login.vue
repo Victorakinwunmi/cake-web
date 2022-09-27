@@ -3,17 +3,34 @@
     <div class="bg-gradient-to-t from-pink-200 to-white p-10 h-56 md:h-full">
         <h1 class="text-5xl font-bold">Welcome</h1>
         <p class="text-black font-semibold m-2">Kindly proceed to the Login</p>
-        <div class="relative bg-gray-100 shadow-xl max-w-2xl p-10 mx-auto h-80 top-16 md:top-56 rounded-2xl">
+        <div class="relative bg-gray-100 shadow-xl max-w-2xl p-10 mx-auto h-96 top-16 md:top-56 rounded-2xl">
             <div class="absolute mx-auto right-0 px-10 w-full">
                 <form @submit.prevent="userValidation" class="md:px-10">
                     <div class="flex justify-center items-center gap-2">
                         <img :src="require('@/assets/icons/Cupcake.svg')" class="w-8 hidden md:block">
                          <h1 class="text-center font-bold text-2xl">LOGIN</h1>
                     </div>
-                    <label class="block mb-2 font-semibold">EMAIL</label>
-                    <input type="email" v-model="user_email" class="w-full mb-2 outline-none border block mx-auto focus:border-pink-400 rounded-md p-2"/>
-                    <label class="block mb-2 font-semibold">PASSWORD</label>
-                    <input type="password" v-model="user_password" class="w-full block border outline-none mb-2 p-2 focus:border-pink-400 rounded-md " />
+                   <div class="pt-10">
+                        <div class=" flex justify-center w-full">
+                            <div class="relative">
+                                <div class="flex items-center ">
+                                    <label :class="is_focused ? 'transform -translate-y-7 absolute transition duration-500 ease-in-out ml-4 font-bold text-sm px-2 bg-gray-100 ':'text-sm transition duration-500 ease-in-out ml-4 cursor-text font-bold absolute px-2'" for="text" >EMAIL</label>
+                                    <input @focus="focus()" @blur="blur()" type="text" v-model="user_email" class="py-4 px-2 md:w-96 bg-transparent border border-black rounded-md outline-none">
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="flex justify-center mt-6 w-full">
+                            <div class="relative">
+                                <div class="flex items-center ">
+                                    <label :class="password_focus ? 'transform -translate-y-7 absolute transition duration-500 bg-gray-100 ease-in-out ml-4 font-bold text-sm px-2':'text-sm transition duration-500 ease-in-out ml-4 cursor-text font-bold absolute px-2'" for="text" >PASSWORD</label>
+                                    <input type="text" @focus="passwordFocus()" @blur="passwordBlur()" v-model="user_password" class="py-4 px-2 md:w-96 border bg-transparent border-black rounded-md outline-none">
+                                </div>
+                                
+                            </div>
+                        </div>
+                   </div>
+                   
                     <button class="block py-2 px-5 mx-auto bg-gray-300 rounded-md border shadow-md text-black font-bold mt-6 hover:bg-gray-400">ENTER</button>
                 </form>
             </div>
@@ -46,19 +63,22 @@
         <nuxt-link to="/" class="font-bold">Go back to Homepage</nuxt-link>
         <img :src="require('@/assets/icons/Exit.png')" class="w-6">
     </div>
-</div>
    
+</div> 
 </template>
 
 <script>
 export default {
+
   data() {
-    return {
+    return{
       user_email: "",
       user_password: "",
       popup:false,
       wrong_pass:false,
       doesnt_exist:false,
+      is_focused:false,
+      password_focus:false,
     };
   },
   methods: {
@@ -76,19 +96,48 @@ export default {
       }
 
       if (this.user_email == userAccount.email) {
-        if (userAccount.password == this.user_password) {
-            this.popup=!this.popup;
-        } else {
-            this.wrong_pass=!this.wrong_pass
-        }
-        } else {
+            if (userAccount.password == this.user_password) {
+                this.popup=!this.popup;
+            } else {
+                this.wrong_pass=!this.wrong_pass
+            }
+        }else {
                 this.doesnt_exist=!this.doesnt_exist
         }
-    },
-
     
-     
+    },
+    
+   focus(){
+    if (this.user_email=="") {
+         this.is_focused = !this.is_focused
+    } else {
+        
+    }
+    
+   },
+   
+   passwordFocus(){
+    if (this.user_password=="") {
+         this. password_focus = !this. password_focus
+    } else {
+        
+    }
+   },
+   passwordBlur(){
+     if (this.user_password==""  ) {
+       this.password_focus = !this.password_focus
+     } else {
+       
+     }
+   },
 
+   blur(){
+     if (this.user_email==""  ) {
+       this.is_focused = !this.is_focused
+     } else {
+       
+     }
+   }
   },
 };
 </script>

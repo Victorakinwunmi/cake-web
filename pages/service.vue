@@ -1,5 +1,5 @@
 <template>
-  <div class="">
+<div class="">
     <div class="bg-gradient-to-t from-pink-200 to-white">
       <div>
         <HeadersContainer>
@@ -248,7 +248,7 @@
         <input
           class="outline-none border border-black px-2 mt-2 md:mt-0 rounded-md"
           v-model="user_scores"
-          type="text"
+          type="number"
           placeholder="please enter your scores"
         />
         <button class="bg-black text-white rounded-md border px-5 py-2 block mt-2 md:mt-0 md:flex border-black">Add user</button>
@@ -267,9 +267,9 @@
         </div>
       </div>
     </div>
-    </div>
-     
   </div>
+     
+</div>
 </template>
 
 <script>
@@ -382,7 +382,6 @@ export default {
       }else{
          this.users.push(newUser)
       }
-    
     },
   }
 };
