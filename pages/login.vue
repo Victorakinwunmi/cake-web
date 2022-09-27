@@ -3,19 +3,19 @@
     <div class="bg-gradient-to-t from-pink-200 to-white p-10 h-56 md:h-full">
         <h1 class="text-5xl font-bold">Welcome</h1>
         <p class="text-black font-semibold m-2">Kindly proceed to the Login</p>
-        <div class="relative bg-gray-100 shadow-xl max-w-2xl p-10 mx-auto h-96 top-16 md:top-56 rounded-2xl">
+        <div class="relative bg-gray-100 shadow-xl max-w-2xl p-10 mx-auto h-80 md:h-96 top-16 md:top-56 rounded-2xl">
             <div class="absolute mx-auto right-0 px-10 w-full">
                 <form @submit.prevent="userValidation" class="md:px-10">
                     <div class="flex justify-center items-center gap-2">
                         <img :src="require('@/assets/icons/Cupcake.svg')" class="w-8 hidden md:block">
                          <h1 class="text-center font-bold text-2xl">LOGIN</h1>
                     </div>
-                   <div class="pt-10">
+                   <div class="pt-4 md:pt-10">
                         <div class=" flex justify-center w-full">
                             <div class="relative">
                                 <div class="flex items-center ">
                                     <label :class="is_focused ? 'transform -translate-y-7 absolute transition duration-500 ease-in-out ml-4 font-bold text-sm px-2 bg-gray-100 ':'text-sm transition duration-500 ease-in-out ml-4 cursor-text font-bold absolute px-2'" for="text" >EMAIL</label>
-                                    <input @focus="focus()" @blur="blur()" type="text" v-model="user_email" class="py-4 px-2 md:w-96 bg-transparent border border-black rounded-md outline-none">
+                                    <input @focus="focus()" @blur="blur()" type="text" v-model="user_email" class="py-4 px-2 md:w-96 bg-transparent border font-semibold border-black rounded-md outline-none">
                                 </div>
                                 
                             </div>
@@ -24,7 +24,7 @@
                             <div class="relative">
                                 <div class="flex items-center ">
                                     <label :class="password_focus ? 'transform -translate-y-7 absolute transition duration-500 bg-gray-100 ease-in-out ml-4 font-bold text-sm px-2':'text-sm transition duration-500 ease-in-out ml-4 cursor-text font-bold absolute px-2'" for="text" >PASSWORD</label>
-                                    <input type="text" @focus="passwordFocus()" @blur="passwordBlur()" v-model="user_password" class="py-4 px-2 md:w-96 border bg-transparent border-black rounded-md outline-none">
+                                    <input type="text" @focus="passwordFocus()" @blur="passwordBlur()" v-model="user_password" class="py-4 font-semibold px-2 md:w-96 border bg-transparent border-black rounded-md outline-none">
                                 </div>
                                 
                             </div>
