@@ -25,7 +25,7 @@
                                 <div class="flex items-center w-full">
                                     <label :class="password_focus ? 'transform -translate-y-7 absolute transition duration-500 bg-gray-100 ease-in-out ml-4 font-bold text-sm px-2':'text-sm transition duration-500  ease-in-out ml-4 cursor-text font-bold absolute px-2'" for="text" >PASSWORD</label>
                                    <div class=" border-black rounded-md border w-full md:w-10/12 flex items-center">
-                                     <input :type="[show_password? 'text':'password']" @focus="passwordFocus()" @blur="passwordBlur()" v-model="user_password" class="py-4 font-semibold w-full px-6 bg-transparent outline-none">
+                                     <input :type="[show_password? 'password':'text']" @focus="passwordFocus()" @blur="passwordBlur()" v-model="user_password" class="py-4 font-semibold w-full px-6 bg-transparent outline-none">
                                      <img :src="require('@/assets/icons/Visible.png')" @click="showPassword()" class="w-6 h-5 mr-4 cursor-pointer">
                                    </div>
                                 </div>
