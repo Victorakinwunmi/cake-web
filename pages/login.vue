@@ -15,7 +15,7 @@
                             <div class="relative w-full">
                                 <div class="flex items-center w-full">
                                     <label :class="is_focused ? 'transform -translate-y-7 absolute transition duration-500 ease-in-out ml-4 font-bold text-sm px-2 bg-gray-100 ':'text-sm transition duration-500 ease-in-out ml-4 cursor-text font-bold absolute px-2'" for="text" >EMAIL</label>
-                                    <input @focus="focus()" @blur="blur()" type="text" v-model="user_email" class="py-4 px-6 w-full md:w-10/12 bg-transparent border font-semibold border-black rounded-md outline-none">
+                                    <input @focus="focus()" @blur="blur()" type="email" v-model="user_email" class="py-4 px-6 w-full md:w-10/12 bg-transparent border font-semibold border-black rounded-md outline-none">
                                 </div>
                                 
                             </div>
@@ -25,7 +25,7 @@
                                 <div class="flex items-center w-full">
                                     <label :class="password_focus ? 'transform -translate-y-7 absolute transition duration-500 bg-gray-100 ease-in-out ml-4 font-bold text-sm px-2':'text-sm transition duration-500  ease-in-out ml-4 cursor-text font-bold absolute px-2'" for="text" >PASSWORD</label>
                                    <div class=" border-black rounded-md border w-full md:w-10/12 flex items-center">
-                                     <input :type="[show_password? 'password':'text']" @focus="passwordFocus()" @blur="passwordBlur()" v-model="user_password" class="py-4 font-semibold w-full px-6 bg-transparent outline-none">
+                                     <input :type="[show_password? 'text':'password']" @focus="passwordFocus()" @blur="passwordBlur()" v-model="user_password" class="py-4 font-semibold w-full px-6 bg-transparent outline-none">
                                      <img :src="require('@/assets/icons/Visible.png')" @click="showPassword()" class="w-6 h-5 mr-4 cursor-pointer">
                                    </div>
                                 </div>
@@ -66,7 +66,13 @@
         <nuxt-link to="/" class="font-bold">Go back to Homepage</nuxt-link>
         <img :src="require('@/assets/icons/Exit.png')" class="w-6">
     </div>
-   
+
+    <LoadingButton :loadingText="'victor'">
+      <template #login>
+        Login
+      </template>
+    </LoadingButton>
+    
 </div> 
 </template>
 
@@ -82,7 +88,7 @@ export default {
       doesnt_exist:false,
       is_focused:false,
       password_focus:false,
-      show_password:"false",
+      show_password:false,
     };
   },
   methods: {
