@@ -11,7 +11,8 @@
         rounded-md
         focus:text-gray-600 focus:outline-none
         outline-none
-        my-10
+        md:my-10
+        my-4
         py-4
         px-10
         bg-gray-300
