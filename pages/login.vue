@@ -5,7 +5,7 @@
         <p class="text-black font-semibold m-2">Kindly proceed to the Login</p>
         <div class="relative bg-gray-100 shadow-xl max-w-2xl p-10 mx-auto h-80 md:h-96 top-16 md:top-56 rounded-2xl">
             <div class="absolute mx-auto right-0 px-10 w-full">
-                <form @submit.prevent="userValidation" class="md:px-10">
+                <form @submit.prevent="userAunthetication" class="md:px-10">
                     <div class="flex justify-center items-center gap-2">
                         <img :src="require('@/assets/icons/Cupcake.svg')" class="w-8 hidden md:block">
                          <h1 class="text-center font-bold text-2xl">LOGIN</h1>
@@ -98,9 +98,13 @@ export default {
         this.show_password = !this.show_password
       },
 
-    userValidation() {
-      
+    userAunthetication(){
       this.Load()
+      setTimeout(this.userValidation,2000)
+    },
+       
+    userValidation() {
+     clearTimeout(this.dLoad())
       let userAccount = {
         email: "adexvictor94@gmail.com",
         password: "victor",
@@ -123,8 +127,6 @@ export default {
         }
     
     },
-
-    
     
    focus(){
     if (this.user_email=="") {
