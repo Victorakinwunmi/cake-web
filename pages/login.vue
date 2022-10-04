@@ -23,22 +23,27 @@
                         <div class="flex justify-center mt-6 w-full md:ml-10">
                             <div class="relative w-full">
                                 <div class="flex items-center w-full">
-                                    <label :class="password_focus ? 'transform -translate-y-7 absolute transition duration-500 bg-gray-100 ease-in-out ml-4 font-bold text-sm px-2':'text-sm transition duration-500  ease-in-out ml-4 cursor-text font-bold absolute px-2'" for="text" >PASSWORD</label>
+                                   <label :class="password_focus ? 'transform -translate-y-7 absolute transition duration-500 bg-gray-100 ease-in-out ml-4 font-bold text-sm px-2':'text-sm transition duration-500  ease-in-out ml-4 cursor-text font-bold absolute px-2'" for="text" >PASSWORD</label>
                                    <div class=" border-black rounded-md border w-full md:w-10/12 flex items-center">
                                      <input :type="[show_password? 'text':'password']" @focus="passwordFocus()" @blur="passwordBlur()" v-model="user_password" class="py-4 font-semibold w-full px-6 bg-transparent outline-none">
-                                     <img :src="require('@/assets/icons/Visible.png')" @click="showPassword()" class="w-6 h-5 mr-4 cursor-pointer">
+                                     <PasswordIcons @togglePassword="showPassword" />
                                    </div>
                                 </div>
                                 
                             </div>
                         </div>
                    </div>
-                   
-                    <button class="block py-2 px-5 mx-auto bg-gray-300 rounded-md border shadow-md text-black font-bold mt-6 hover:bg-gray-400">ENTER</button>
+
+                   <div class="w-full flex justify-center">
+                      <LoadingButton :loadingText="'Auntheticating..'" :loading="loading_state">
+                        <template #login>LOGIN</template>
+                      </LoadingButton>
+                   </div>
                 </form>
             </div>
         </div>
     </div>
+
     <BigModal :Show="popup" @cancel="userValidation">
       <template #title>
         <h1>Welcome</h1>
@@ -67,11 +72,7 @@
         <img :src="require('@/assets/icons/Exit.png')" class="w-6">
     </div>
 
-    <LoadingButton :loadingText="'victor'">
-      <template #login>
-        Login
-      </template>
-    </LoadingButton>
+   
     
 </div> 
 </template>
@@ -89,11 +90,17 @@ export default {
       is_focused:false,
       password_focus:false,
       show_password:false,
+      loading_state: false,
     };
   },
   methods: {
-    userValidation() {
+      showPassword(){
+        this.show_password = !this.show_password
+      },
 
+    userValidation() {
+      
+      this.Load()
       let userAccount = {
         email: "adexvictor94@gmail.com",
         password: "victor",
@@ -116,6 +123,8 @@ export default {
         }
     
     },
+
+    
     
    focus(){
     if (this.user_email=="") {
@@ -149,9 +158,16 @@ export default {
      }
    },
   
-   showPassword(){
-     this.show_password = !this.show_password
-   }
+  Load(){
+    if(this.user_email =="" && this.user_password ==""){
+      return
+    }else{
+     this.loading_state=!this.loading_state
+    }
+  },
+  dLoad(){
+    this.loading_state=false
+  },
 
   },
 };
