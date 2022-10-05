@@ -71,8 +71,6 @@
         <nuxt-link to="/" class="font-bold">Go back to Homepage</nuxt-link>
         <img :src="require('@/assets/icons/Exit.png')" class="w-6">
     </div>
-
-   
     
 </div> 
 </template>
@@ -110,7 +108,7 @@ export default {
         password: "victor",
       };
     
-      if(this.user_email =="" && this.user_password ==""){
+      if(this.user_email =="" || this.user_password ==""){
         return
       }else{
         
@@ -167,6 +165,7 @@ export default {
      this.loading_state=!this.loading_state
     }
   },
+
   dLoad(){
     this.loading_state=false
   },

@@ -117,7 +117,7 @@
     <div class="py-16 lg:px-0 bg-gradient-to-t from-white to-pink-100" id="order">
       <div class="text-black text-center">
         <h1 class="text-4xl lg:text-6xl font-bold">How To Order</h1>
-        <p class="mt-6 full text-base lg:text-xl">
+        <p class="mt-6 px-10 text-base lg:text-xl">
          Our job is filling your tummy with delicious cakes, chops, mocktail
          and cocktail with fast and free delivery
         </p>
@@ -125,15 +125,17 @@
 
       <div
         class="
-          grid grid-cols-1
-          md:grid-cols-2
-          lg:grid-cols-3
+          flex-col
+          lg:flex-row
+          lg:px-28
           gap-1
           mt-10
           lg:mt-16
+          flex 
+          justify-center
         "
       >
-        <div class="mx-auto w-7/12 block md:flex items-center">
+        <div class="justify-center lg:max-w-lg mx-auto w-7/12 block md:flex items-center">
           <div>
             <div>
               <img
@@ -154,7 +156,7 @@
           </div>
         </div>
 
-        <div class="mx-auto w-7/12 block md:flex items-center my-10 lg:m-0">
+        <div class="justify-center lg:max-w-lg mx-auto w-7/12 block md:flex items-center my-10 lg:m-0">
           <div>
             <div>
               <div>
@@ -177,7 +179,7 @@
           </div>
         </div>
 
-        <div class="mx-auto lg:-mx-16 xl:-mx-28 w-7/12">
+        <div class="mx-auto w-7/12">
           <div>
             <div>
               <div>

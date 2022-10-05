@@ -213,7 +213,7 @@ export default {
         {
           id: 1,
           title: "Naked Cake",
-          pic: require("@/assets/images/naked.png"),
+          pic: require("@/assets/images/chiffoncake.png"),
           desc: `Best cake for normal occasion parties and even
                 after lunch you can have this light cake with cheese
                 `,
@@ -221,7 +221,7 @@ export default {
         {
           id: 2,
           title: "Strawberry Cake",
-          pic: require("@/assets/images/straw.png"),
+          pic: require("@/assets/images/chiffoncake.png"),
           desc: `Our website is User-friendly you can order by just
                 clicking on (Buy now) and 3 simple steps and you will
                 receive your order within 24 hours
