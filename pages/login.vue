@@ -71,7 +71,6 @@
         <nuxt-link to="/" class="font-bold">Go back to Homepage</nuxt-link>
         <img :src="require('@/assets/icons/Exit.png')" class="w-6">
     </div>
-    
 </div> 
 </template>
 

@@ -119,7 +119,7 @@
         <form @submit.prevent="handleChoicePicked">
           <div class="w-full outline-none p-4 border-2 rounded-md border-gray-300 mb-2 mt-2">
             <h1 class="text-gray-400 font-bold">Which of our products do you want?</h1>
-            <select class="text-gray-400 outline-none py-2 bg-white" v-model="customer_product">
+            <select class="text-gray-400 outline-none py-2 bg-pink-100" v-model="customer_product">
               <option value="Naked cake" class="font-bold">Naked cake</option>
               <option value="Strawberry cake" class="font-bold">Strawberry cake</option>
               <optgroup label="Custom cake">
@@ -132,7 +132,7 @@
           </div>
           <div class="w-full outline-none p-4 border-2 rounded-md border-gray-300 mb-2 mt-2">
             <h1 class="text-gray-400 font-bold">Quantity of the product</h1>
-            <select class="text-gray-400 outline-none py-2 bg-white" v-model="product_quantity">
+            <select class="text-gray-400 outline-none py-2 bg-pink-100" v-model="product_quantity">
               <option value="One" class="font-bold">One</option>
               <option value="Two" class="font-bold">Two</option>
               <option value="Three" class="font-bold">Three</option>

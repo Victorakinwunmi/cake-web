@@ -1,14 +1,14 @@
 <template>
   <transition name="page">
     
-    <div class="fixed top-0 w-full blur bg-opacity-50 z-90" v-show="Show">
-      <div class="relative min-h-screen bg-white bg-opacity-25 flex justify-center items-center lg:px-0 ">
-        <div class="bg-white w-full md:w-3/4 shadow-2xl xl:w-2/4 flex justify-center items-center top-0">
+    <div class="fixed top-0 w-full blur bg-opacity-50 z-50" v-show="Show">
+      <div class="relative min-h-screen  bg-white bg-opacity-25 flex justify-center items-center lg:px-0 ">
+        <div class="bg-pink-100 w-full md:w-3/4 rounded-2xl shadow-2xl xl:w-2/4 flex justify-center items-center top-0">
         <transition name="page">
 
-          <div v-show="Show" :class="MaxWidth" class="z-110 relative top-0 overflow-hidden sm:rounded-t-3xl w-full md:max-w-7xl">
+          <div v-show="Show" :class="MaxWidth" class="z-50 relative top-0 overflow-hidden sm:rounded-t-3xl w-full md:max-w-7xl">
           
-            <div class="top-0 z-50 px-4 sm:px-6 flex items-start justify-between border-b border-accent1-200 shadow-sm">
+            <div class="top-0 z-50 px-4 sm:px-6 flex items-start justify-between border-b border-pink-200 shadow-sm">
               <div class="font-bold text-base sm:text-xl md:text-2xl py-6 md:px-6 mr-2">
                 <slot name="title"></slot>
               </div>
@@ -30,7 +30,7 @@
             </div>
             
             <div class="">
-              <div class="w-full px-4 sm:px-6 custom-scroll-y h-screen-80 md:h-screen-75">
+              <div class="w-full px-4 sm:px-6  h-screen-80 md:h-screen-75">
                 <div class="py-4 md:px-4 text-sm sm:text-base">
                   <slot></slot>
                 </div>

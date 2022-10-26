@@ -258,7 +258,7 @@
         <div
           v-for="item in users"
           :key="item.id"
-          class="text-center flex "
+          class="text-center flex"
 
         >
           <div class="font-bold border w-full border-black text-black">{{ item.name }}</div>

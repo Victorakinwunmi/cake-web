@@ -133,6 +133,8 @@
           lg:mt-16
           flex 
           justify-center
+          md:max-w-7xl
+          mx-auto
         "
       >
         <div class="justify-center lg:max-w-lg mx-auto w-7/12 block md:flex items-center">
@@ -271,7 +273,7 @@
          </template>
       </AccordionAppAccordion>
     </div>
-    <BigModal :Show="popup" @cancel="closeModal">
+    <BigModal :Show="t" @cancel="closeModal">
       <template #title>
         <h1>Welcome</h1>
       </template>
@@ -280,15 +282,15 @@
       </template>
       <div class="mb-2 mt-5">
         <div class="w-full outline-none p-4 border-2 rounded-md border-gray-300">
-            <div class="-mt-7 mb-4 rounded-full font-bold text-gray-400 w-16 text-center bg-white">Address</div>
-          <input type="text" placeholder="Please enter your Address" class="outline-none text-gray-400 w-full">
+            <div class="-mt-7 mb-4 rounded-full font-bold text-gray-400 w-16 text-center bg-pink-100">Address</div>
+          <input type="text" placeholder="Please enter your Address" class="outline-none text-gray-400 bg-transparent w-full">
         </div>
       </div>
 
       <div class="mb-2 mt-5">
           <div class="w-full outline-none p-4 border-2 rounded-md border-gray-300">
-            <div class="-mt-7 mb-4 font-bold text-gray-400 w-20 text-center bg-white rounded-full">Phone no</div>
-            <input type="number" placeholder="Please enter your Phone number" class="outline-none text-gray-400 w-full">
+            <div class="-mt-7 mb-4 font-bold text-gray-400 w-20 text-center bg-pink-100 rounded-full">Phone no</div>
+            <input type="number" placeholder="Please enter your Phone number" class="outline-none text-gray-400 bg-transparent w-full">
           </div>
       </div>
 
@@ -326,6 +328,7 @@ export default {
       }
     },
   },
+
   beforeMount() {
     window.addEventListener("scroll", this.handleStickyNavigation);
   },
@@ -333,6 +336,12 @@ export default {
   beforeDestroy() {
     window.removeEventListener("scroll", this.handleStickyNavigation);
   },
+
+  created() {
+    console.log("Hey Bou")
+  }
+   
+
 };
 </script>
 
