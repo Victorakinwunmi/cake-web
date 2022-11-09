@@ -293,9 +293,8 @@
           </div>
       </div>
 
-      <button class="flex gap-2 items-center border bg-gray-400 w-44 mx-auto justify-center p-4 mt-4 rounded-md">
+      <button class="flex gap-2 items-center bg-pink-300 border duration-500 transition text-gray-100 ease-in-out hover:text-gray-300 hover:bg-gray-400 w-44 mx-auto justify-center p-4 mt-4 rounded-md">
         <h1 class="font-bold">Submit</h1>
-        <img :src="require('@/assets/icons/Right.png')" class="w-6 h-4">
       </button>
     </BigModal>
   </div>
@@ -316,7 +315,7 @@ export default {
   },
   methods:{
     closeModal(){
-      this.popup=!this.popup;
+      this.popup=this.popup;
     },
 
     handleStickyNavigation() {
