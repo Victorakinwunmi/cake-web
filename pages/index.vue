@@ -272,7 +272,7 @@
          </template>
       </AccordionAppAccordion>
     </div>
-    <BigModal :Show="t" @cancel="closeModal">
+    <BigModal :Show="popup" @cancel="closeModal">
       <template #title>
         <h1>Welcome</h1>
       </template>
