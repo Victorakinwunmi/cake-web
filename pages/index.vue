@@ -51,7 +51,7 @@
       </HeadersContainer>
     </div>
 
-    <div class="pt-24">
+    <div class="pt-24 lg:py-44">
       <CtaContainer>
         <template #headingbtn>
           <div class="hidden w-52 lg:block border bg-pink-200 p-5 rounded-md">
@@ -151,7 +151,7 @@
           </div>
           <div>
             <img
-              :src="require('@/assets/icons/arrow1.png')"
+              :src="require('@/assets/icons/arrow2.png')"
               class="hidden lg:block w-12 h-10"
             />
           </div>
@@ -327,7 +327,7 @@ export default {
       }
     },
     scrollToOrder(){
-      window.scroll({top:500, behavior:'smooth'})
+      window.scroll({top:800, behavior:'smooth'})
     }
   },
 
@@ -339,10 +339,6 @@ export default {
     window.removeEventListener("scroll", this.handleStickyNavigation);
   },
 
-  created() {
-    console.log("Hey Bou")
-  }
-   
 
 };
 </script>
