@@ -78,7 +78,6 @@
         </template>
 
         <template #orderbtn>
-          <a href="#order">
             <button
               class="
                 w-full
@@ -94,6 +93,7 @@
                 hover:bg-pink-600
                 rounded-md
               "
+              @click="scrollToOrder"
             >
               <h1 class="text-pink-100 mx-4 text-center font-bold">
                 Order now
@@ -105,7 +105,6 @@
                 />
               </div>
             </button>
-          </a>
         </template>
 
         <template #picture>
@@ -114,7 +113,7 @@
       </CtaContainer>
     </div>
 
-    <div class="py-16 lg:px-0 bg-gradient-to-t from-white to-pink-100" id="order">
+    <div class="py-16 lg:px-0 bg-gradient-to-t from-white to-pink-100">
       <div class="text-black text-center">
         <h1 class="text-4xl lg:text-6xl font-bold">How To Order</h1>
         <p class="mt-6 px-10 text-base lg:text-xl">
@@ -327,6 +326,9 @@ export default {
         this.popup = false;
       }
     },
+    scrollToOrder(){
+      window.scroll({top:500, behavior:'smooth'})
+    }
   },
 
   beforeMount() {
