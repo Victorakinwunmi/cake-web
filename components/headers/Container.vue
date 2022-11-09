@@ -1,5 +1,5 @@
 <template>
-  <div class="flex justify-between w-full p-4 fixed items-center z-100" :class="sticky_nav ? 'bg-pink-100 transition duration-500 ease-in-out' : 'transition duration-500 ease-in-out'">
+  <div class="flex justify-between w-full p-4 fixed items-center z-50" :class="sticky_nav ? 'bg-pink-100 transition duration-500 ease-in-out' : 'transition duration-500 ease-in-out'">
     <div>
       <slot name="logo" />
     </div>

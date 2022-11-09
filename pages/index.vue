@@ -1,4 +1,5 @@
 <template>
+<div>
   <div class="bg-gradient-to-t from-pink-200 to-white">
     <div>
       <HeadersContainer>
@@ -272,7 +273,7 @@
          </template>
       </AccordionAppAccordion>
     </div>
-    <BigModal :Show="popup" @cancel="closeModal">
+    <BigModal :Show="poup" @cancel="closeModal">
       <template #title>
         <h1>Welcome</h1>
       </template>
@@ -298,6 +299,8 @@
       </button>
     </BigModal>
   </div>
+  <Footer/>
+</div>
 </template>
 
 <script>

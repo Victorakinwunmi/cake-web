@@ -231,44 +231,8 @@
           />
         </div>
       </div>
-    <div class="p-10 bg-pink-100 border border">
-      <form @submit.prevent="addNewUser" class="px-2 lg:px-10 block md:max-w-4xl gap-2 mx-auto md:flex">
-        <input
-          class="outline-none border border-black px-2 rounded-md"
-          v-model="user_name"
-          type="text"
-          placeholder="please enter your name"
-        />
-        <input
-          class="outline-none border border-black mt-2 md:mt-0 px-2 rounded-md"
-          v-model="user_class"
-          type="text"
-          placeholder="please enter your class"
-        />
-        <input
-          class="outline-none border border-black px-2 mt-2 md:mt-0 rounded-md"
-          v-model="user_scores"
-          type="number"
-          placeholder="please enter your scores"
-        />
-        <button class="bg-black text-white rounded-md border px-5 py-2 block mt-2 md:mt-0 md:flex border-black">Add user</button>
-      </form>
-
-      <div class="mt-6 mb-2 border border-black p-4 max-w-4xl mx-auto">
-        <div
-          v-for="item in users"
-          :key="item.id"
-          class="text-center flex"
-
-        >
-          <div class="font-bold border w-full border-black text-black">{{ item.name }}</div>
-          <div class="font-bold border w-full border-black text-black">{{ item.class }}</div>
-          <div class="font-bold border w-full border-black text-black">{{ item.scores }}</div>
-        </div>
-      </div>
-    </div>
   </div>
-     
+  <Footer/>
 </div>
 </template>
 
@@ -278,18 +242,7 @@ export default {
     return {
        customer_name: "",
        customer_message: "",
-       user_name:"",
-       user_class:"",
-       user_scores:"",
-
-      users:[
-         {
-          id:1,
-          name:"jane",
-          class:"sss2",
-          scores:80
-         },
-      ] ,
+     
       cupcakes: [
         {
           id: 1,
@@ -370,19 +323,7 @@ export default {
     };
   },
   methods:{
-    addNewUser(newUser){
-       newUser = {
-        name:this.user_name,
-        class:this.user_class,
-        scores:this.user_scores
-      };
 
-      if(newUser.name == "" && newUser.class =="" && newUser.scores == ""){
-        return
-      }else{
-         this.users.push(newUser)
-      }
-    },
   }
 };
 </script>
