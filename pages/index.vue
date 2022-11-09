@@ -304,7 +304,7 @@
 export default {
   props:{
     popupPoint:{
-      default:500,
+      default:200,
       type:Number,
     }
   },
