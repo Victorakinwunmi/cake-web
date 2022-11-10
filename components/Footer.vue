@@ -1,6 +1,6 @@
 <template>
-    <div class="py-10 px-8">
-      <div class="bg-white border border-gray-400 md:shadow-xl py-8 px-10 lg:px-10 md:py-16 container mx-auto w-full">
+    <div class="py-10 px-8 bg-gray-100">
+      <div class="bg-white border border-gray-300 rounded-sm md:shadow-xl py-8 px-10 lg:px-10 md:py-16 container mx-auto w-full">
          <div class="w-full block md:flex mx-auto justify-between">
             <div class="w-full md:w-2/6">
               <h1 class="text-black font-bold text-xl lg:text-2xl mb-6">ORGANIZATION</h1>
